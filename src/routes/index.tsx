@@ -29,7 +29,7 @@ function Home() {
         <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-20">
           <div className="flex items-center gap-3">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.jpeg"
               alt=""
               className="size-16 rounded-full object-cover ring-2 ring-gold/70 sm:size-20"
             />
