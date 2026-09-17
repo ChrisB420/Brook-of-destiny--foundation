@@ -21,7 +21,7 @@ function Home() {
     <>
       <section className="relative isolate min-h-[88dvh] overflow-hidden bg-forest-deep text-cream">
         <img
-          src="/images/hero.jpg"
+          src="/images/hero.jpeg"
           alt="Highland paths and maize fields in Bungoma County, western Kenya"
           className="absolute inset-0 size-full object-cover"
         />
