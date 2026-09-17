@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #0e3b2e;
+  --color-forest-deep: #07241c;
+  --color-forest-mid: #165a46;
+  --color-gold: #c6a15b;
+  --color-gold-soft: #e4d2a0;
+  --color-gold-deep: #9a7836;
+  --color-sky: #5b9ec4;
+  --color-sky-soft: #d7ebf4;
+  --color-cream: #f6f3eb;
+  --color-paper: #fbf9f4;
+  --color-ink: #14241c;
+  --color-muted: #5c6b62;
+  --color-line: #ddd4c2;
+  --color-card: #fffcf6;
+  --font-display: "Cormorant Garamond", "Palatino Linotype", Palatino, serif;
+  --font-sans: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --shadow-soft: 0 1px 2px rgb(20 36 28 / 0.05), 0 8px 24px rgb(20 36 28 / 0.06);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --aspect-photo: 3 / 2;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--color-forest);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-gold-soft);
+    color: var(--color-forest-deep);
+  }
+
+  img {
+    outline: 1px solid rgb(20 36 28 / 0.08);
+    outline-offset: -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+@utility font-sans {
+  font-family: var(--font-sans);
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.vercel/
+
+# Local preview and generated card metadata
+.grok/app-env.json
+.grok/card-*.bin
+.grok/card-*.jpg
+.grok/favicon-*.png
+.grok/preview.log
+.grok/status
+
+# Generated browser-preview reports
+screenshots/*.json
