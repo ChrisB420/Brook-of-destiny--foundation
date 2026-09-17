@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/donate")({
   component: Donate,
   head: () => ({
-    meta: [{ title: "Donate — Brook of Destiny Foundation" }],
+    meta: [{ title: "Support Our Work — Brook of Destiny Foundation" }],
   }),
 });
 
@@ -16,8 +16,8 @@ const STEPS = [
   "Open M-PESA on your phone",
   "Choose Lipa na M-PESA, then Pay Bill",
   `Enter business number ${SITE.giving.paybill}`,
-  `Enter account number ${SITE.giving.account}`,
-  "Enter the amount the Lord has placed on your heart",
+  `Enter account number ${SITE.giving.mpesaAccount}`,
+  "Enter the amount you would like to give",
   "Enter your M-PESA PIN and confirm",
 ];
 
@@ -25,25 +25,25 @@ function Donate() {
   return (
     <>
       <PageHero
-        kicker="Give"
-        title="Support our work"
-        lede="Every shilling is a seed. Give through M-Pesa or KCB, sponsor a learner, or send a gift in kind — we will steward it in Lugulu."
+        kicker="Support Our Work"
+        title="Give hope, opportunity, and practical support"
+        lede="Support education, health, parenting, psychosocial care, youth empowerment, livelihoods, evangelism, and discipleship across the communities we serve."
         image="/images/farming.jpg"
-        imageAlt="Farmers working the land in Bungoma County"
+        imageAlt="Community members working together in Bungoma County"
       />
 
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
-            M-Pesa Paybill
+            M-PESA Paybill
           </p>
           <h2 className="mt-3 font-display text-3xl font-semibold">
-            The fastest way to give from Kenya
+            Give from Kenya
           </h2>
           <BrookRule className="mt-4" />
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <CopyField label="Paybill (business number)" value={SITE.giving.paybill} large />
-            <CopyField label="Account number" value={SITE.giving.account} large />
+            <CopyField label="M-PESA account number" value={SITE.giving.mpesaAccount} large />
           </div>
           <p className="mt-4 text-sm text-muted">
             Account name: {SITE.giving.accountName}. Tap a number to copy it.
@@ -62,7 +62,7 @@ function Donate() {
 
         <div className="rounded-2xl bg-forest p-6 text-cream sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
-            Bank transfer
+            Direct bank deposit
           </p>
           <h2 className="mt-3 font-display text-3xl font-semibold text-cream">
             {SITE.giving.bank}
@@ -73,58 +73,39 @@ function Donate() {
               <dd className="mt-1 text-lg text-cream">{SITE.giving.accountName}</dd>
             </div>
             <div>
-              <dt className="text-gold-soft">Account number</dt>
+              <dt className="text-gold-soft">Direct bank account number</dt>
               <dd className="mt-1 font-display text-2xl text-cream">
-                {SITE.giving.account}
+                {SITE.giving.bankAccount}
               </dd>
-            </div>
-            <div>
-              <dt className="text-gold-soft">Paybill for this account</dt>
-              <dd className="mt-1 text-lg text-cream">{SITE.giving.paybill}</dd>
             </div>
           </dl>
           <p className="mt-6 text-sm text-cream/75">
-            For SWIFT or international wire details, write to us and we will
-            send them privately. Please include your name and the programme you
-            wish to bless.
+            Please contact us after depositing so we can acknowledge your support and provide any receipt or programme information required.
           </p>
           <Button asChild variant="gold" className="mt-6">
-            <a href={`mailto:${SITE.email}?subject=International%20giving`}>
-              Request international details
-            </a>
+            <a href={`mailto:${SITE.email}?subject=Donation%20confirmation`}>Contact us about your gift</a>
           </Button>
         </div>
       </section>
 
       <section className="bg-cream">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <h2 className="font-display text-3xl font-semibold">Other ways to give</h2>
+          <h2 className="font-display text-3xl font-semibold">Many ways to partner</h2>
           <BrookRule className="mt-4" />
           <div className="mt-8 grid gap-5 md:grid-cols-3">
-            <article className="rounded-2xl border border-line bg-card p-6 shadow-soft">
-              <h3 className="font-display text-xl text-forest">Sponsor a learner</h3>
-              <p className="mt-2 text-sm text-muted">
-                Cover a term or a year of fees, books, and a mentor. You will
-                know the name you are holding.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-line bg-card p-6 shadow-soft">
-              <h3 className="font-display text-xl text-forest">Gifts in kind</h3>
-              <p className="mt-2 text-sm text-muted">
-                Uniforms, sanitary pads, farm inputs, medical kits, and food
-                parcels — tell us before you send so we can receive well.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-line bg-card p-6 shadow-soft">
-              <h3 className="font-display text-xl text-forest">Church collections</h3>
-              <p className="mt-2 text-sm text-muted">
-                Congregations may designate an offering for Brook of Destiny.
-                We are glad to send a short briefing for your missions Sunday.
-              </p>
-            </article>
+            {[
+              ["Financial contributions", "Give through M-PESA or direct bank deposit to strengthen our programmes."],
+              ["Scholarships and materials", "Support vulnerable learners with fees, books, uniforms, learning materials, food, or clothing."],
+              ["Skills and partnership", "Offer professional expertise, volunteer service, agribusiness training, project funding, or a joint community project."],
+            ].map(([title, body]) => (
+              <article key={title} className="rounded-2xl border border-line bg-card p-6 shadow-soft">
+                <h3 className="font-display text-xl text-forest">{title}</h3>
+                <p className="mt-2 text-sm text-muted">{body}</p>
+              </article>
+            ))}
           </div>
           <Button asChild className="mt-8">
-            <Link to="/contact">Tell us how you would like to give</Link>
+            <Link to="/contact">Tell us how you would like to partner</Link>
           </Button>
         </div>
       </section>
