@@ -57,7 +57,7 @@ function About() {
         <img
           src="/images/logo.jpeg"
           alt="Green highland countryside around Lugulu in Bungoma County"
-          className="aspect-photo w-full self-center rounded-2xl object-cover"
+          className="aspect-square w-full max-w-sm self-center rounded-2xl bg-forest object-contain p-6"
         />
       </section>
 
