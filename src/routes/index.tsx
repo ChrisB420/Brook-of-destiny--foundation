@@ -26,6 +26,11 @@ function Home() {
           className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-forest-deep/62" />
+        <img
+          src="/images/logo.jpeg"
+          alt="Brook of Destiny Foundation"
+          className="absolute right-[16%] bottom-[26%] z-10 size-16 rounded-full object-cover ring-2 ring-gold/70 sm:size-20 md:size-24"
+        />
         <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-20">
           <div className="flex items-center gap-3">
             <img
