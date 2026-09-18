@@ -184,7 +184,7 @@ function Home() {
         controls
         muted
         playsInline
-        poster="/images/education.jpg"
+        poster="/images/education/classroom-04.jpg"
       />
       <div className="bg-card p-4">
         <h3 className="font-display text-lg font-semibold text-forest">
@@ -206,7 +206,7 @@ function Home() {
       />
       <div className="bg-card p-4">
         <h3 className="font-display text-lg font-semibold text-forest">
-          Tree planting day
+          Team building
         </h3>
         <p className="mt-1 text-sm text-muted">
           Community members planting trees as part of our Livelihoods work.
