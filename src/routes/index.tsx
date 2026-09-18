@@ -168,6 +168,34 @@ function Home() {
           </div>
         </div>
       </section>
+<section className="bg-cream">
+  <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20">
+    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+      Watch
+    </p>
+    <h2 className="mt-3 font-display text-3xl font-semibold text-forest sm:text-4xl">
+      See it for yourself
+    </h2>
+    <BrookRule className="mx-auto mt-4" />
+    <div className="mx-auto mt-8 aspect-[9/16] w-full max-w-xs overflow-hidden rounded-2xl shadow-soft">
+      <iframe
+        className="size-full"
+        src="https://www.youtube.com/embed/AJNP--TraYM"
+        title="Brook of Destiny Foundation on YouTube"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+    <a
+      href="https://youtube.com/@brookofdestinyfoundation"
+      target="_blank"
+      rel="noreferrer"
+      className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-gold-deep hover:underline"
+    >
+      Watch more on our YouTube channel
+    </a>
+  </div>
+</section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-2">
