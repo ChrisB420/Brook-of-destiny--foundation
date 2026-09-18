@@ -61,9 +61,7 @@ function Home() {
           <BrookRule className="mt-5 h-4 w-48" />
 
           <p className="mt-5 max-w-xl text-base text-cream/90 sm:text-lg">
-            Brook of Destiny Foundation is a Christian non-profit that holds
-            the Gospel and practical care together — scholarships, mentorship,
-            health, livelihoods, and a family around every vulnerable child.
+            Brook of Destiny Foundation is a Christian non-profit organization dedicated to holistic community transformation. By integrating the Gospel with practical care, the organization delivers sustainable impact through scholarships, mentorship, health and psychosocial support, livelihood initiatives, and community development—building a supportive network around every vulnerable child and family..
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
