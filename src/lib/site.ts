@@ -99,7 +99,7 @@ export const PROGRAMMES: Programme[] = [
       "Our mentorship circles gather under trees, in halls, and after Sunday meetings. We mix life skills, career guidance, and Christian discipleship — helping youth read their gifts in the light of Scripture and the needs of their community.",
       "We welcome volunteer mentors from churches, campuses, and the diaspora who can commit to a season of presence, not a one-day event.",
     ],
-    image: "/images/mentorship/classroom-04.jpg",
+    image: "/images/education/classroom-04.jpg",
     imageAlt:
       "A youth mentorship circle seated under a tree in the western Kenya highlands",
     icon: "users",
