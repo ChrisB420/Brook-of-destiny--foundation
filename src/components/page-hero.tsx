@@ -6,20 +6,43 @@ export function PageHero({
   lede,
   image,
   imageAlt,
+  video,
+  imagePosition = "center",
 }: {
   kicker?: string;
   title: string;
   lede: string;
   image: string;
   imageAlt: string;
+  video?: string;
+  imagePosition?: "top" | "center" | "bottom";
 }) {
+  const positionClass =
+    imagePosition === "top"
+      ? "object-top"
+      : imagePosition === "bottom"
+        ? "object-bottom"
+        : "object-center";
+
   return (
     <section className="relative isolate min-h-[22rem] overflow-hidden bg-forest-deep text-cream">
-      <img
-        src={image}
-        alt={imageAlt}
-        className="absolute inset-0 size-full object-cover object-top"
-      />
+      {video ? (
+        <video
+          src={video}
+          poster={image}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className={`absolute inset-0 size-full object-cover ${positionClass}`}
+        />
+      ) : (
+        <img
+          src={image}
+          alt={imageAlt}
+          className={`absolute inset-0 size-full object-cover ${positionClass}`}
+        />
+      )}
       <div className="absolute inset-0 bg-forest-deep/70" />
       <div className="relative mx-auto flex min-h-[22rem] max-w-6xl flex-col justify-end px-4 py-12 sm:px-6 sm:py-16">
         {kicker ? (
