@@ -82,7 +82,7 @@ export const PROGRAMMES: Programme[] = [
       "We walk with selected learners and families — paying what is needed, visiting schools, and pairing each scholarship with a mentor so that support is more than a receipt. We want young people who finish, not only those who start.",
       "Partners can sponsor a learner for a term or a year, gift examination kits, or help us grow a revolving scholarship fund as the Foundation builds its capacity.",
     ],
-    image: "/images/education/group-discussion-01.jpg",
+    image: "/images/education/classroom-02.jpg",
     imageAlt:
       "Young people studying with a mentor in a sunlit classroom in western Kenya",
     video: "/videos/education/classroom-tour-01.mp4",
@@ -99,7 +99,7 @@ export const PROGRAMMES: Programme[] = [
       "Our mentorship circles gather under trees, in halls, and after Sunday meetings. We mix life skills, career guidance, and Christian discipleship — helping youth read their gifts in the light of Scripture and the needs of their community.",
       "We welcome volunteer mentors from churches, campuses, and the diaspora who can commit to a season of presence, not a one-day event.",
     ],
-    image: "/images/mentorship/circle-01.jpg",
+    image: "/images/mentorship/classroom-04.jpg",
     imageAlt:
       "A youth mentorship circle seated under a tree in the western Kenya highlands",
     icon: "users",
