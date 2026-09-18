@@ -208,7 +208,7 @@ function Home() {
 
       <section className="relative isolate overflow-hidden bg-forest-deep py-16 text-cream sm:py-20">
         <img
-          src="/images/faith.jpg"
+          src="/images/events/poster-2026.jpg"
           alt=""
           className="absolute inset-0 size-full object-cover opacity-30"
         />
