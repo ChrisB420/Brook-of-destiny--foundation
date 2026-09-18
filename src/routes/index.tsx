@@ -29,7 +29,7 @@ function Home() {
         <img
           src="/images/logo.jpeg"
           alt="Brook of Destiny Foundation"
-          className="absolute right-[12%] bottom-[20%] z-10 w-32 object-contain sm:w-40 md:w-56"
+          className="absolute right-[12%] bottom-[20%] z-10 w-48 object-contain sm:w-64 md:w-80"
         />
         <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-20">
           <div className="flex items-center gap-3">
