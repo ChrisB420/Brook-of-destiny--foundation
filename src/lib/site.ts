@@ -33,6 +33,7 @@ export const SITE = {
 
 export const NAV = [
   { to: "/about" as const, label: "About" },
+  { to: "/team" as const, label: "Our Team" },
   { to: "/programmes" as const, label: "Programmes" },
   { to: "/impact" as const, label: "Impact" },
   { to: "/get-involved" as const, label: "Get involved" },
