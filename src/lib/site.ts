@@ -23,6 +23,7 @@ export const SITE = {
     tiktok: "https://www.tiktok.com/@brookofdestinyfoundation",
     facebook: "https://www.facebook.com/brookofdestinyfoundation",
     instagram: "https://www.instagram.com/brookofdestinyfoundation",
+    youtube:"https://youtube.com/@brookofdestinyfoundation?si=1ljmyn8UQP974fPM",
   },
   verse: {
     text: "They are like trees planted by streams of water, which yield their fruit in its season.",
