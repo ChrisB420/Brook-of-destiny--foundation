@@ -139,7 +139,7 @@ function Home() {
       <section className="bg-forest text-cream">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
           <img
-            src="/images/volunteers.jpg"
+            src="/images/team/interview-01.jpg"
             alt="Volunteers in reflective jackets speaking with residents in a village compound"
             className="aspect-photo w-full rounded-2xl object-cover"
           />
