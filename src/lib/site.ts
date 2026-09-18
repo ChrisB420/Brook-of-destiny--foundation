@@ -195,7 +195,7 @@ export const PROGRAMMES: Programme[] = [
       "We run parenting conversations in halls and homesteads: listening, Scripture, practical tools for discipline without violence, and support for caregivers who are raising children that are not their own.",
       "This is quiet work. It needs facilitators, printed guides in Kiswahili and English, and churches willing to host a series rather than a single Sunday announcement.",
     ],
-    image: "/images/mentorship/circle-02.jpg",
+    image: "/images/mentorship/parenting-01.jpeg",
     imageAlt: "Adults gathered for a teaching and conversation circle",
     icon: "heart",
   },
