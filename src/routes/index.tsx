@@ -227,7 +227,7 @@ function Home() {
           Team building
         </h3>
         <p className="mt-1 text-sm text-muted">
-          Community members planting trees as part of our Livelihoods work.
+          Our staff and volunteers building trust and unity behind the scenes.
         </p>
       </div>
     </div>
