@@ -220,7 +220,7 @@ function Home() {
     controls
     muted
     playsInline
-    poster="/images/feeding/distribution-01.jpg"
+    poster="/images/feeding/distribution-05.jpg"
   />
   <div className="bg-card p-4">
     <h3 className="font-display text-lg font-semibold text-forest">
