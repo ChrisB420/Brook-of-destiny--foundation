@@ -112,7 +112,7 @@ function About() {
       <section className="bg-forest-deep text-cream">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
           <img
-            src="/images/faith.jpg"
+            src="/images/events/poster-2026.jpg"
             alt="Congregation gathered for worship in rural western Kenya"
             className="aspect-photo w-full rounded-2xl object-cover"
           />
