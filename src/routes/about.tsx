@@ -20,6 +20,7 @@ function About() {
         lede="We are a Christian-based non-profit that nurtures destinies and transforms communities — still young in capacity, already clear in conviction."
         image="/images/team/colleagues-01.jpg"
         imageAlt="Foundation volunteers speaking with community members"
+        imagePosition="top"
       />
 
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
