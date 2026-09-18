@@ -198,11 +198,11 @@ function Home() {
     <div className="overflow-hidden rounded-2xl shadow-soft">
       <video
         className="aspect-photo w-full object-cover"
-        src="/videos/farming/tree-planting-day.mp4"
+        src="/videos/team/teamwork.mp4"
         controls
         muted
         playsInline
-        poster="/images/farming.jpg"
+        poster="/images/farming/tree-planting-01.jpg"
       />
       <div className="bg-card p-4">
         <h3 className="font-display text-lg font-semibold text-forest">
