@@ -55,7 +55,7 @@ function About() {
           </div>
         </div>
         <img
-          src="/images/hero.jpg"
+          src="/images/logo.jpeg"
           alt="Green highland countryside around Lugulu in Bungoma County"
           className="aspect-photo w-full self-center rounded-2xl object-cover"
         />
