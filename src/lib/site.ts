@@ -58,7 +58,14 @@ export type Programme = {
   body: string[];
   image: string;
   imageAlt: string;
+
+  images?: {
+    src: string;
+    alt: string;
+  }[];
+
   video?: string;
+
   icon:
     | "graduation"
     | "users"
@@ -69,6 +76,7 @@ export type Programme = {
     | "home"
     | "trees";
 };
+
 
 export const PROGRAMMES: Programme[] = [
   {
