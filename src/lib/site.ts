@@ -112,22 +112,45 @@ export const PROGRAMMES: Programme[] = [
       "A youth mentorship circle seated under a tree in the western Kenya highlands",
     icon: "users",
   },
-  {
-    slug: "faith",
-    title: "Faith, Evangelism & Discipleship",
-    short: "Christ at the centre",
-    summary:
-      "The Gospel is not an add-on. We preach Christ, make disciples, and plant habits of prayer, Scripture, and service in every programme.",
-    body: [
-      "Brook of Destiny Foundation is unapologetically Christian. We believe lasting community transformation begins with lives made new in Jesus Christ — and that faith without practical love is empty.",
-      "We support local churches in Lugulu and surrounding congregations with evangelism outreaches, Bible study, and discipleship of new believers. Field activities open with prayer; scholarships and livelihoods are framed as stewardship, not luck.",
-      "Churches and mission partners are invited to labour with us: crusades and quiet follow-up, pulpits and kitchen tables, the Word and a sack of seed.",
-    ],
-    image: "/images/events/poster-2026.jpg",
-    imageAlt:
-      "A congregation gathered in worship under an open-air shelter in rural Kenya",
-    icon: "book",
-  },
+ {
+  slug: "faith",
+  title: "Faith, Evangelism & Discipleship",
+  short: "Christ at the centre",
+  summary:
+    "The Gospel is not an add-on. We preach Christ, make disciples, and plant habits of prayer, Scripture, and service in every programme.",
+  body: [
+    "Brook of Destiny Foundation is unapologetically Christian. We believe lasting community transformation begins with lives made new in Jesus Christ — and that faith without practical love is empty.",
+    "We support local churches in Lugulu and surrounding congregations with evangelism outreaches, Bible study, and discipleship of new believers. Field activities open with prayer; scholarships and livelihoods are framed as stewardship, not luck.",
+    "Churches and mission partners are invited to labour with us: crusades and quiet follow-up, pulpits and kitchen tables, the Word and a sack of seed.",
+  ],
+
+  image: "/images/faith/bibles-01.jpg",
+
+  imageAlt:
+    "Sponsors presenting Bibles as part of a Christian faith and discipleship initiative",
+
+  images: [
+    {
+      src: "/images/faith/bibles-01.jpg",
+      alt: "Sponsors presenting Bibles during a Brook of Destiny Foundation faith initiative",
+    },
+    {
+      src: "/images/faith/bibles-02.jpg",
+      alt: "Bibles being provided through a Christian discipleship and outreach initiative",
+    },
+    {
+      src: "/images/faith/bibles-03.jpg",
+      alt: "Sponsors supporting Bible distribution and Christian ministry",
+    },
+    {
+      src: "/images/faith/bibles-04.jpg",
+      alt: "Sponsors supporting Bible distribution and Christian ministry",
+    },
+  ],
+
+  icon: "book",
+},
+
   {
     slug: "health",
     title: "Health & Psychosocial Support",
