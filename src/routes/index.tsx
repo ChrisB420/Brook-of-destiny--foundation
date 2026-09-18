@@ -198,7 +198,7 @@ function Home() {
     <div className="overflow-hidden rounded-2xl shadow-soft">
       <video
         className="aspect-photo w-full object-cover"
-        src="/videos/education/classroom-tour-01.mp4"
+        src="/videos/education/classroom-01.mp4"
         controls
         muted
         playsInline
