@@ -111,7 +111,7 @@ export const PROGRAMMES: Programme[] = [
       "We support local churches in Lugulu and surrounding congregations with evangelism outreaches, Bible study, and discipleship of new believers. Field activities open with prayer; scholarships and livelihoods are framed as stewardship, not luck.",
       "Churches and mission partners are invited to labour with us: crusades and quiet follow-up, pulpits and kitchen tables, the Word and a sack of seed.",
     ],
-    image: "/images/faith.jpg",
+    image: "/images/events/poster-2026.jpg",
     imageAlt:
       "A congregation gathered in worship under an open-air shelter in rural Kenya",
     icon: "book",
@@ -127,7 +127,7 @@ export const PROGRAMMES: Programme[] = [
       "Psychosocial support sits beside the medical. Orphans, young mothers, and caregivers need someone who will listen. We train lay counsellors and walk with those who need more specialised care.",
       "We are still building this work. Medical professionals, counsellors, and partners who can supply kits or fund a clinic day are needed.",
     ],
-    image: "/images/feeding/distribution-01.jpg",
+    image: "/images/feeding/distribution-02.jpg",
     imageAlt:
       "Community health volunteers in reflective jackets speaking with residents under a shade tent",
     icon: "stethoscope",
@@ -174,7 +174,7 @@ export const PROGRAMMES: Programme[] = [
       "We do not warehouse children. We strengthen the family or caregiver around them: school support, food in hard months, psychosocial care, and visits so that no child disappears from view. Where a child is at risk, we work with local administrators and churches.",
       "Child sponsorship, guardianship partners, and gifts in kind (blankets, sanitary pads, food parcels) make this possible as we grow.",
     ],
-    image: "/images/education/classroom-tour-03.jpg",
+    image: "/images/education/classroom-03.jpg",
     imageAlt: "Learners in a classroom receiving teaching and care",
     icon: "home",
   },
