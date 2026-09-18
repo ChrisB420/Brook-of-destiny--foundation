@@ -2,7 +2,7 @@ export const SITE = {
   name: "Brook of Destiny Foundation",
   shortName: "Brook of Destiny",
   tagline: "Nurturing Destinies, Transforming Communities.",
-  domain: "brookofdestinyfoundation.org",
+  domain: "brookofdestinyfoundation.com",
   email: "info@brookofdestinyfoundation.org",
   phoneLabel: "Email or the form — we reply personally",
   location: {
@@ -79,7 +79,7 @@ export const PROGRAMMES: Programme[] = [
       "We walk with selected learners and families — paying what is needed, visiting schools, and pairing each scholarship with a mentor so that support is more than a receipt. We want young people who finish, not only those who start.",
       "Partners can sponsor a learner for a term or a year, gift examination kits, or help us grow a revolving scholarship fund as the Foundation builds its capacity.",
     ],
-    image: "/images/education.jpg",
+    image: "/images/education/classroom-01.jpg",
     imageAlt:
       "Young people studying with a mentor in a sunlit classroom in western Kenya",
     icon: "graduation",
@@ -95,7 +95,7 @@ export const PROGRAMMES: Programme[] = [
       "Our mentorship circles gather under trees, in halls, and after Sunday meetings. We mix life skills, career guidance, and Christian discipleship — helping youth read their gifts in the light of Scripture and the needs of their community.",
       "We welcome volunteer mentors from churches, campuses, and the diaspora who can commit to a season of presence, not a one-day event.",
     ],
-    image: "/images/mentorship.jpg",
+    image: "/images/mentorship/mentorship/circle-01.jpg",
     imageAlt:
       "A youth mentorship circle seated under a tree in the western Kenya highlands",
     icon: "users",
@@ -127,7 +127,7 @@ export const PROGRAMMES: Programme[] = [
       "Psychosocial support sits beside the medical. Orphans, young mothers, and caregivers need someone who will listen. We train lay counsellors and walk with those who need more specialised care.",
       "We are still building this work. Medical professionals, counsellors, and partners who can supply kits or fund a clinic day are needed.",
     ],
-    image: "/images/health.jpg",
+    image: "/images/feeding/distribution-01.jpg",
     imageAlt:
       "Community health volunteers in reflective jackets speaking with residents under a shade tent",
     icon: "stethoscope",
@@ -143,7 +143,7 @@ export const PROGRAMMES: Programme[] = [
       "We train groups in agribusiness basics — soil, record-keeping, savings, and stewardship — and help promising groups access starter inputs. The aim is dignity: families who feed themselves and tithe from increase, not permanent relief.",
       "Agronomists, SACCO partners, and friends who can fund a demonstration plot or a village savings cycle are especially welcome.",
     ],
-    image: "/images/farming.jpg",
+    image: "/images/farming/tree-planting-02.jpg",
     imageAlt:
       "Farmers tending maize and vegetables in the green highlands of Bungoma County",
     icon: "sprout",
@@ -159,7 +159,7 @@ export const PROGRAMMES: Programme[] = [
       "We run parenting conversations in halls and homesteads: listening, Scripture, practical tools for discipline without violence, and support for caregivers who are raising children that are not their own.",
       "This is quiet work. It needs facilitators, printed guides in Kiswahili and English, and churches willing to host a series rather than a single Sunday announcement.",
     ],
-    image: "/images/mentorship.jpg",
+    image: "/images/mentorship/cicle-02.jpg",
     imageAlt: "Adults gathered for a teaching and conversation circle",
     icon: "heart",
   },
@@ -174,7 +174,7 @@ export const PROGRAMMES: Programme[] = [
       "We do not warehouse children. We strengthen the family or caregiver around them: school support, food in hard months, psychosocial care, and visits so that no child disappears from view. Where a child is at risk, we work with local administrators and churches.",
       "Child sponsorship, guardianship partners, and gifts in kind (blankets, sanitary pads, food parcels) make this possible as we grow.",
     ],
-    image: "/images/education.jpg",
+    image: "/images/education/classroom-tour-03.jpg",
     imageAlt: "Learners in a classroom receiving teaching and care",
     icon: "home",
   },
@@ -249,25 +249,25 @@ export const INVOLVE_PATHS = [
 export const STORIES = [
   {
     title: "Classrooms that stay open",
-    image: "/images/education.jpg",
+    image: "/images/education/classroom-02.jpg",
     imageAlt: "Students and a mentor in a rural classroom",
     body: "When a learner is sent home for fees, a destiny pauses. Our education work is deliberately small and personal: we would rather walk faithfully with a few than announce numbers we cannot shepherd.",
   },
   {
     title: "Circles under the trees",
-    image: "/images/mentorship.jpg",
+    image: "/images/mentorship/circle-01.jpg",
     imageAlt: "Youth seated in a mentorship circle outdoors",
     body: "Mentorship in Lugulu does not require a conference hall. It requires adults who will sit, listen, and open Scripture. These circles are where character is formed before careers are chosen.",
   },
   {
     title: "Jackets on the path",
-    image: "/images/volunteers.jpg",
+    image: "/images/team/colleagues-01.jpg",
     imageAlt: "Volunteers in reflective jackets speaking with residents",
     body: "You will know our volunteers by the reflective jackets and by the time they take. Outreach is not a photograph. It is a conversation at a homestead, a referral, a prayer, a return visit.",
   },
   {
     title: "Fields that feed more than hunger",
-    image: "/images/farming.jpg",
+    image: "/images/farming/tree-planting-01.jpg",
     imageAlt: "Farmers working a maize plot in Bungoma County",
     body: "Livelihoods training treats farming as calling and craft. A well-kept plot is a sermon about stewardship — and a way a household stops waiting for the next handout.",
   },
