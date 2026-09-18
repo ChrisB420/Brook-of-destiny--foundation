@@ -168,6 +168,53 @@ function Home() {
           </div>
         </div>
       </section>
+<section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+    From our programmes
+  </p>
+  <h2 className="mt-3 max-w-2xl font-display text-3xl font-semibold sm:text-4xl">
+    Watch the work in motion
+  </h2>
+  <BrookRule className="mt-4" />
+  <div className="mt-10 grid gap-6 sm:grid-cols-2">
+    <div className="overflow-hidden rounded-2xl shadow-soft">
+      <video
+        className="aspect-photo w-full object-cover"
+        src="/videos/education/classroom-tour.mp4"
+        controls
+        muted
+        playsInline
+        poster="/images/education.jpg"
+      />
+      <div className="bg-card p-4">
+        <h3 className="font-display text-lg font-semibold text-forest">
+          Inside the classroom
+        </h3>
+        <p className="mt-1 text-sm text-muted">
+          A look at our Education & Scholarships programme in Lugulu.
+        </p>
+      </div>
+    </div>
+    <div className="overflow-hidden rounded-2xl shadow-soft">
+      <video
+        className="aspect-photo w-full object-cover"
+        src="/videos/farming/tree-planting-day.mp4"
+        controls
+        muted
+        playsInline
+        poster="/images/farming.jpg"
+      />
+      <div className="bg-card p-4">
+        <h3 className="font-display text-lg font-semibold text-forest">
+          Tree planting day
+        </h3>
+        <p className="mt-1 text-sm text-muted">
+          Community members planting trees as part of our Livelihoods work.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 <section className="bg-cream">
   <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20">
     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
