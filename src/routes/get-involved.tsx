@@ -29,7 +29,7 @@ function GetInvolved() {
         kicker="Partner with us"
         title="Come and labour in Lugulu"
         lede="We are building capacity. Volunteers, churches, sponsors, and skilled friends are not extras — they are how this work will grow without losing its soul."
-        image="/images/volunteers.jpg"
+        image="/images/community-01.jpg"
         imageAlt="Volunteers in reflective jackets with community members"
       />
 
