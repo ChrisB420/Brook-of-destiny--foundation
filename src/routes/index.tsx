@@ -214,6 +214,24 @@ function Home() {
       </div>
     </div>
     <div className="overflow-hidden rounded-2xl shadow-soft">
+  <video
+    className="aspect-photo w-full object-cover"
+    src="/videos/feeding/distribution-01.mp4"
+    controls
+    muted
+    playsInline
+    poster="/images/feeding/distribution-01.jpg"
+  />
+  <div className="bg-card p-4">
+    <h3 className="font-display text-lg font-semibold text-forest">
+      In the field
+    </h3>
+    <p className="mt-1 text-sm text-muted">
+      Another glimpse into the day-to-day work of Brook of Destiny Foundation.
+    </p>
+  </div>
+</div>
+    <div className="overflow-hidden rounded-2xl shadow-soft">
       <video
         className="aspect-photo w-full object-cover"
         src="/videos/team/teamwork.mp4"
