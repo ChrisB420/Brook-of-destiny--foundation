@@ -18,7 +18,7 @@ function About() {
         kicker="About us"
         title="A brook in Lugulu, a calling for Bungoma"
         lede="We are a Christian-based non-profit that nurtures destinies and transforms communities — still young in capacity, already clear in conviction."
-        image="/images/volunteers.jpg"
+        image="/images/team/colleagues-01.jpg"
         imageAlt="Foundation volunteers speaking with community members"
       />
 
