@@ -56,6 +56,7 @@ export type Programme = {
   body: string[];
   image: string;
   imageAlt: string;
+  video?: string;
   icon:
     | "graduation"
     | "users"
@@ -82,6 +83,7 @@ export const PROGRAMMES: Programme[] = [
     image: "/images/education/group-discussion-01.jpg",
     imageAlt:
       "Young people studying with a mentor in a sunlit classroom in western Kenya",
+    video: "videos/education/classroom-tour-01.mp4",
     icon: "graduation",
   },
   {
@@ -130,6 +132,7 @@ export const PROGRAMMES: Programme[] = [
     image: "/images/feeding/distribution-02.jpg",
     imageAlt:
       "Community health volunteers in reflective jackets speaking with residents under a shade tent",
+    video: "videos/feeding/feeding-kids.mp4",
     icon: "stethoscope",
   },
   {
