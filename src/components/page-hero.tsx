@@ -18,7 +18,7 @@ export function PageHero({
       <img
         src={image}
         alt={imageAlt}
-        className="absolute inset-0 size-full object-cover"
+        className="absolute inset-0 size-full object-cover object-top"
       />
       <div className="absolute inset-0 bg-forest-deep/70" />
       <div className="relative mx-auto flex min-h-[22rem] max-w-6xl flex-col justify-end px-4 py-12 sm:px-6 sm:py-16">
