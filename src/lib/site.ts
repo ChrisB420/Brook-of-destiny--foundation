@@ -210,7 +210,7 @@ export const PROGRAMMES: Programme[] = [
       "We do not warehouse children. We strengthen the family or caregiver around them: school support, food in hard months, psychosocial care, and visits so that no child disappears from view. Where a child is at risk, we work with local administrators and churches.",
       "Child sponsorship, guardianship partners, and gifts in kind (blankets, sanitary pads, food parcels) make this possible as we grow.",
     ],
-    image: "/images/education/classroom-07.jpg",
+    image: "/images/community-01.jpg",
     imageAlt: "Learners in a classroom receiving teaching and care",
     icon: "home",
   },
