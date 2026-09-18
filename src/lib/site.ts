@@ -3,7 +3,7 @@ export const SITE = {
   shortName: "Brook of Destiny",
   tagline: "Nurturing Destinies, Transforming Communities.",
   domain: "brookofdestinyfoundation.com",
-  email: "info@brookofdestinyfoundation.org",
+  email: "brookofdestiny@gmail.com",
   phoneLabel: "Email or the form — we reply personally",
   location: {
     town: "Lugulu",
