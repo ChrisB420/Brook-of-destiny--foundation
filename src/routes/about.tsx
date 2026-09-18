@@ -18,7 +18,7 @@ function About() {
         kicker="About us"
         title="Rooted in Bungoma"
         lede="Brook of Destiny Foundation is rooted in Bungoma, Kenya, with a vision that reaches beyond borders — responding to human needs, nurturing potential, restoring hope, and creating opportunities for children, young people, families, and communities."
-        image="/images/team/colleagues-01.jpg"
+        image="/images/team/colleagues-02.jpg"
         imageAlt="Foundation volunteers speaking with community members"
         imagePosition="top"
       />
