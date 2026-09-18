@@ -124,26 +124,26 @@ export const PROGRAMMES: Programme[] = [
     "Churches and mission partners are invited to labour with us: crusades and quiet follow-up, pulpits and kitchen tables, the Word and a sack of seed.",
   ],
 
-  image: "/images/faith/bibles-01.jpg",
+  image: "/images/faith/bible-01.jpeg",
 
   imageAlt:
     "Sponsors presenting Bibles as part of a Christian faith and discipleship initiative",
 
   images: [
     {
-      src: "/images/faith/bibles-01.jpg",
+      src: "/images/faith/bible-01.jpeg",
       alt: "Sponsors presenting Bibles during a Brook of Destiny Foundation faith initiative",
     },
     {
-      src: "/images/faith/bibles-02.jpg",
+      src: "/images/faith/bible-02.jpeg",
       alt: "Bibles being provided through a Christian discipleship and outreach initiative",
     },
     {
-      src: "/images/faith/bibles-03.jpg",
+      src: "/images/faith/bible-03.jpeg",
       alt: "Sponsors supporting Bible distribution and Christian ministry",
     },
     {
-      src: "/images/faith/bibles-04.jpg",
+      src: "/images/faith/bible-04.jpeg",
       alt: "Sponsors supporting Bible distribution and Christian ministry",
     },
   ],
