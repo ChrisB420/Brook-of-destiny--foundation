@@ -16,8 +16,8 @@ function About() {
     <>
       <PageHero
         kicker="About us"
-        title="A brook in Lugulu, a calling for Bungoma"
-        lede="We are a Christian-based non-profit that nurtures destinies and transforms communities — still young in capacity, already clear in conviction."
+        title="Rooted in Bungoma"
+        lede="Brook of Destiny Foundation is rooted in Bungoma, Kenya, with a vision that reaches beyond borders — responding to human needs, nurturing potential, restoring hope, and creating opportunities for children, young people, families, and communities."
         image="/images/team/colleagues-01.jpg"
         imageAlt="Foundation volunteers speaking with community members"
         imagePosition="top"
@@ -48,10 +48,11 @@ function About() {
               traders, churchgoers, and families who already know how to hope.
             </p>
             <p>
-              We are still building systems, staff, and partnerships. That
-              honesty is part of our stewardship. We invite churches, friends in
-              the diaspora, and institutions who prefer a long obedience to a
-              loud launch.
+              We are building a sustainable organization with a wider vision
+              for impact. We welcome churches, individuals, institutions,
+              development organizations, foundations, businesses, and partners
+              who share our commitment to transforming lives and building
+              stronger, resilient communities.
             </p>
           </div>
         </div>
@@ -79,16 +80,17 @@ function About() {
           </article>
           <article className="rounded-2xl bg-forest p-8 text-cream shadow-soft">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
-              Mission
+              Faith That Serves
             </p>
             <h2 className="mt-3 font-display text-2xl text-cream">
               Nurture destinies. Transform communities.
             </h2>
             <p className="mt-3 text-cream/80">
-              Through education and scholarships, youth mentorship, evangelism
-              and discipleship, health and psychosocial care, livelihoods,
-              parenting support, care for orphans and vulnerable children, and
-              community development — always with Christ at the centre.
+              Our Christian foundation shapes the way we serve. Through
+              education, mentorship, evangelism, discipleship, health and
+              psychosocial support, livelihoods, and community development, we
+              seek to turn compassion into practical action and faith into
+              meaningful impact.
             </p>
           </article>
         </div>
@@ -138,6 +140,22 @@ function About() {
               <Link to="/programmes">Our programmes</Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-cream">
+        <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+            Growing through partnership
+          </p>
+          <h2 className="mt-3 font-display text-2xl font-semibold text-forest sm:text-3xl">
+            A Global Vision, Local Roots
+          </h2>
+          <BrookRule className="mx-auto mt-4" />
+          <p className="mt-5 text-lg text-muted">
+            Rooted in Bungoma. Serving with purpose. Partnering beyond
+            borders. Transforming lives.
+          </p>
         </div>
       </section>
     </>
