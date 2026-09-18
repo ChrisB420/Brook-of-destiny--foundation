@@ -18,7 +18,7 @@ function Impact() {
         kicker="Impact"
         title="Faithful presence, not inflated numbers"
         lede="We are gathering stories from the field as we grow. What we can already show you is the shape of the work: classrooms, circles, jackets on the path, and plots that feed a family."
-        image="/images/mentorship.jpg"
+        image="/images/farming/tree-planting-01.jpg"
         imageAlt="A mentorship circle under a tree in western Kenya"
       />
 
