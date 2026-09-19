@@ -210,7 +210,7 @@ export const PROGRAMMES: Programme[] = [
       "We do not warehouse children. We strengthen the family or caregiver around them: school support, food in hard months, psychosocial care, and visits so that no child disappears from view. Where a child is at risk, we work with local administrators and churches.",
       "Child sponsorship, guardianship partners, and gifts in kind (blankets, sanitary pads, food parcels) make this possible as we grow.",
     ],
-    image: "/images/community-01.jpg",
+    image: "/images/mentorship.jpg",
     imageAlt: "Learners in a classroom receiving teaching and care",
     icon: "home",
   },
@@ -225,7 +225,7 @@ export const PROGRAMMES: Programme[] = [
       "This may be a sanitation day, a tree-planting, a peace conversation, or helping a group register so it can receive training. We move at the pace of trust.",
       "County partners, churches, and friends abroad who prefer to fund a concrete local project — rather than a general appeal — will find a ready conversation.",
     ],
-    image: "/images/community-01.jpg",
+    image: "/images/team/community-02.jpg",
     imageAlt:
       "Rolling green highland countryside and village paths in Bungoma County",
     icon: "trees",
