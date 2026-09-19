@@ -1,3 +1,5 @@
+// src/lib/site.ts
+
 export const SITE = {
   name: "Brook of Destiny Foundation",
   shortName: "Brook of Destiny",
@@ -33,10 +35,15 @@ export const SITE = {
   },
 
   verse: {
-    text: "They are like trees planted by streams of water, which yield their fruit in its season.",
+    text:
+      "They are like trees planted by streams of water, which yield their fruit in its season.",
     ref: "Psalm 1:3",
   },
 } as const;
+
+/* -------------------------------------------------------------------------- */
+/* Navigation                                                                  */
+/* -------------------------------------------------------------------------- */
 
 export const NAV = [
   { to: "/about" as const, label: "About" },
@@ -46,6 +53,10 @@ export const NAV = [
   { to: "/get-involved" as const, label: "Get Involved" },
   { to: "/contact" as const, label: "Contact" },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* Programme Types                                                             */
+/* -------------------------------------------------------------------------- */
 
 export type ProgrammeSlug =
   | "education"
@@ -57,6 +68,21 @@ export type ProgrammeSlug =
   | "ovc"
   | "community-development";
 
+export type ProgrammeIcon =
+  | "graduation"
+  | "users"
+  | "book"
+  | "stethoscope"
+  | "sprout"
+  | "heart"
+  | "home"
+  | "trees";
+
+export type ProgrammeImage = {
+  src: string;
+  alt: string;
+};
+
 export type Programme = {
   slug: ProgrammeSlug;
   title: string;
@@ -65,24 +91,14 @@ export type Programme = {
   body: string[];
   image: string;
   imageAlt: string;
-
-  images?: {
-    src: string;
-    alt: string;
-  }[];
-
+  images?: ProgrammeImage[];
   video?: string;
-
-  icon:
-    | "graduation"
-    | "users"
-    | "book"
-    | "stethoscope"
-    | "sprout"
-    | "heart"
-    | "home"
-    | "trees";
+  icon: ProgrammeIcon;
 };
+
+/* -------------------------------------------------------------------------- */
+/* Programmes                                                                  */
+/* -------------------------------------------------------------------------- */
 
 export const PROGRAMMES: Programme[] = [
   {
@@ -363,7 +379,7 @@ export const PROGRAMMES: Programme[] = [
 
     images: [
       {
-        src: "/images/community-02.jpeg",
+        src: "/images/team/community-02.jpeg",
         alt: "Children and young people participating in a learning activity",
       },
     ],
@@ -409,11 +425,25 @@ export const PROGRAMMES: Programme[] = [
   },
 ];
 
+/* -------------------------------------------------------------------------- */
+/* Programme Helpers                                                           */
+/* -------------------------------------------------------------------------- */
+
 export function getProgramme(
   slug: string
 ): Programme | undefined {
   return PROGRAMMES.find((programme) => programme.slug === slug);
 }
+
+export function isProgrammeSlug(
+  slug: string
+): slug is ProgrammeSlug {
+  return PROGRAMMES.some((programme) => programme.slug === slug);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Values                                                                      */
+/* -------------------------------------------------------------------------- */
 
 export const VALUES = [
   {
@@ -458,6 +488,10 @@ export const VALUES = [
       "Compassion is more than words. We seek practical ways to stand with children, families, and communities when they face difficult circumstances.",
   },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* Get Involved                                                                */
+/* -------------------------------------------------------------------------- */
 
 export const INVOLVE_PATHS = [
   {
@@ -504,6 +538,10 @@ export const INVOLVE_PATHS = [
     cta: "Give or offer skills",
   },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* Stories / Impact                                                            */
+/* -------------------------------------------------------------------------- */
 
 export const STORIES = [
   {
@@ -555,6 +593,10 @@ export const STORIES = [
   },
 ];
 
+/* -------------------------------------------------------------------------- */
+/* Education & Scholarship Campaign                                            */
+/* -------------------------------------------------------------------------- */
+
 export const EDUCATION_SUPPORT = {
   title: "Walk With a Child. Nurture a Destiny.",
 
@@ -591,16 +633,22 @@ export const EDUCATION_SUPPORT = {
       label: "Sponsor a Learner",
       to: "/donate" as const,
     },
+
     {
       label: "Become a Mentor",
       to: "/contact" as const,
     },
+
     {
       label: "Partner With Us",
       to: "/contact" as const,
     },
   ],
-};
+} as const;
+
+/* -------------------------------------------------------------------------- */
+/* Giving                                                                      */
+/* -------------------------------------------------------------------------- */
 
 export const GIVING = {
   title: "Give Toward a Child's Future",
@@ -643,7 +691,11 @@ export const GIVING = {
 
   transparency:
     "We are committed to responsible stewardship and to using resources purposefully to serve children, families, and communities.",
-};
+} as const;
+
+/* -------------------------------------------------------------------------- */
+/* Contact                                                                      */
+/* -------------------------------------------------------------------------- */
 
 export const CONTACT = {
   email: SITE.email,
@@ -655,7 +707,11 @@ export const CONTACT = {
 
   partnershipMessage:
     "Whether you want to sponsor a learner, volunteer your skills, partner as a church or organisation, or support a community project, we would be glad to hear from you.",
-};
+} as const;
+
+/* -------------------------------------------------------------------------- */
+/* Footer                                                                      */
+/* -------------------------------------------------------------------------- */
 
 export const FOOTER = {
   mission:
@@ -665,4 +721,4 @@ export const FOOTER = {
 
   copyright:
     `© ${new Date().getFullYear()} Brook of Destiny Foundation. All rights reserved.`,
-};
+} as const;
