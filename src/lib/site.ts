@@ -140,41 +140,41 @@ export const PROGRAMMES: Programme[] = [
 
   images: [
       {
-      src: "/images/education/education-02.jpg",
+      src: "/images/education/education-02.jpeg",
       alt: "Young learners studying together in a classroom",
     },
     // Scholarship photos
     {
-      src: "/images/education/scholarship-01.jpg",
+      src: "/images/education/scholarship-01.jpeg",
       alt:
         "A learner receiving educational scholarship support from Brook of Destiny Foundation",
     },
     
     // Sponsorship photos
     {
-      src: "/images/education/sponsorship-01.jpg",
+      src: "/images/education/sponsorship-01.jpeg",
       alt:
         "A child receiving support through the Brook of Destiny Foundation sponsorship programme",
     },
     {
-      src: "/images/education/sponsorship-02.jpg",
+      src: "/images/education/sponsorship-02.jpeg",
       alt:
         "Educational sponsorship helping a vulnerable learner continue their studies",
     },
    
     // Donation photos
     {
-      src: "/images/education/donation-01.jpg",
+      src: "/images/education/donation-01.jpeg",
       alt:
         "Educational supplies being provided to support vulnerable learners",
     },
     {
-      src: "/images/education/donation-02.jpg",
+      src: "/images/education/donation-02.jpeg",
       alt:
         "Donated learning materials being provided to children through the education programme",
     },
     {
-      src: "/images/education/donation-03.jpg",
+      src: "/images/education/donation-03.jpeg",
       alt:
         "Community members receiving donated educational support from Brook of Destiny Foundation",
     },
