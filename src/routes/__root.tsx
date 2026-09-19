@@ -26,11 +26,11 @@ export const Route = createRootRoute({
     content:
       "Rooted in Bungoma. Serving with purpose. Partnering beyond borders. Transforming lives.",
   },
-  { property: "og:image", content: "https://brookofdestinyfoundation.com/og.jpg" },
+  { property: "og:image", content: "https://brookofdestinyfoundation.com/og.jpeg" },
   { property: "og:type", content: "website" },
   { property: "og:url", content: "https://brookofdestinyfoundation.com" },
   { name: "twitter:card", content: "summary_large_image" },
-  { name: "twitter:image", content: "https://brookofdestinyfoundation.com/og.jpg" },
+  { name: "twitter:image", content: "https://brookofdestinyfoundation.com/og.jpeg" },
 ],
     links: [
       { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
