@@ -101,58 +101,90 @@ export type Programme = {
 /* -------------------------------------------------------------------------- */
 
 export const PROGRAMMES: Programme[] = [
-  {
-    slug: "education",
+ {
+  slug: "education",
 
-    title: "Education & Scholarship Support",
+  title: "Education & Scholarship Support",
 
-    short: "Walk with a child. Nurture a destiny.",
+  short: "Walk with a child. Nurture a destiny.",
 
-    summary:
-      "Helping vulnerable learners stay in school through educational assistance, mentorship, encouragement, and practical support for a brighter future.",
+  summary:
+    "Helping vulnerable learners stay in school through educational assistance, mentorship, encouragement, and practical support for a brighter future.",
 
-    body: [
-      "Every child carries God-given potential, a dream, and a future worth protecting. Yet for some children, the journey through education is interrupted—not because they lack ability, but because of circumstances beyond their control.",
+  body: [
+    "Every child carries God-given potential, a dream, and a future worth protecting. Yet for some children, the journey through education is interrupted—not because they lack ability, but because of circumstances beyond their control.",
 
-      "School fees, uniforms, books, examination costs, learning materials, and other basic needs can become barriers that keep a child away from the classroom. At Brook of Destiny Foundation, we believe that supporting a child's education is an investment in a life and in the future of a community.",
+    "School fees, uniforms, books, examination costs, learning materials, and other basic needs can become barriers that keep a child away from the classroom. At Brook of Destiny Foundation, we believe that supporting a child's education is an investment in a life and in the future of a community.",
 
-      "Through our Education & Scholarship Programme, we identify vulnerable learners and walk alongside them with educational assistance, mentorship, encouragement, and practical support as they pursue their studies.",
+    "Through our Education & Scholarship Programme, we identify vulnerable learners and walk alongside them with educational assistance, mentorship, encouragement, and practical support as they pursue their studies.",
 
-      "Our goal is to move beyond a one-time contribution and build a meaningful journey of support. We want to help children remain in school, overcome challenges, complete their studies, discover their gifts, and prepare for their future.",
+    "Our goal is to move beyond a one-time contribution and build a meaningful journey of support. We want to help children remain in school, overcome challenges, complete their studies, discover their gifts, and prepare for their future.",
 
-      "Partners can choose to support one learner or several learners for a term, a year, or, where possible, throughout their educational journey. Support may contribute toward school fees, uniforms, books, learning materials, examination needs, mentorship, and career guidance.",
+    "Partners can choose to support one learner or several learners for a term, a year, or, where possible, throughout their educational journey. Support may contribute toward school fees, uniforms, books, learning materials, examination needs, mentorship, and career guidance.",
 
-      "More importantly, sponsorship communicates something every child deserves to hear: 'Your future matters. You are not walking this journey alone.'",
+    "More importantly, sponsorship communicates something every child deserves to hear: 'Your future matters. You are not walking this journey alone.'",
 
-      "We believe education is more than passing examinations. It is about nurturing character, confidence, responsibility, faith, skills, and hope. Through mentorship and encouragement, we seek to walk with learners beyond the classroom and help them prepare for meaningful futures.",
+    "We believe education is more than passing examinations. It is about nurturing character, confidence, responsibility, faith, skills, and hope. Through mentorship and encouragement, we seek to walk with learners beyond the classroom and help them prepare for meaningful futures.",
 
-      "The Bible reminds us of the importance of compassion and generosity: 'Whoever is kind to the poor lends to the LORD, and he will reward them for what they have done.' — Proverbs 19:17.",
+    "The Bible reminds us of the importance of compassion and generosity: 'Whoever is kind to the poor lends to the LORD, and he will reward them for what they have done.' — Proverbs 19:17.",
 
-      "We cannot promise what form God's reward will take, but Scripture assures us that He sees acts of compassion and values generosity toward those in need.",
+    "We cannot promise what form God's reward will take, but Scripture assures us that He sees acts of compassion and values generosity toward those in need.",
 
-      "Walk with a child. Support their education. Nurture their destiny. Your partnership can help transform a difficult beginning into a journey of hope, learning, opportunity, and possibility.",
-    ],
+    "Walk with a child. Support their education. Nurture their destiny. Your partnership can help transform a difficult beginning into a journey of hope, learning, opportunity, and possibility.",
+  ],
 
-    image: "/images/education/education-01.jpeg",
+  image: "/images/education/education-01.jpeg",
 
-    imageAlt:
-      "Young learners studying with a mentor in a classroom in western Kenya",
+  imageAlt:
+    "Young learners studying with a mentor in a classroom in western Kenya",
 
-    images: [
+  images: [
       {
-        src: "/images/education/classroom-02.jpg",
-        alt: "Young learners studying together in a classroom",
-      },
-      {
-        src: "/images/education/classroom-04.jpg",
-        alt: "A mentor engaging young learners during an educational session",
-      },
-    ],
+      src: "/images/education/education-02.jpg",
+      alt: "Young learners studying together in a classroom",
+    },
+    // Scholarship photos
+    {
+      src: "/images/education/scholarship-01.jpg",
+      alt:
+        "A learner receiving educational scholarship support from Brook of Destiny Foundation",
+    },
+    
+    // Sponsorship photos
+    {
+      src: "/images/education/sponsorship-01.jpg",
+      alt:
+        "A child receiving support through the Brook of Destiny Foundation sponsorship programme",
+    },
+    {
+      src: "/images/education/sponsorship-02.jpg",
+      alt:
+        "Educational sponsorship helping a vulnerable learner continue their studies",
+    },
+   
+    // Donation photos
+    {
+      src: "/images/education/donation-01.jpg",
+      alt:
+        "Educational supplies being provided to support vulnerable learners",
+    },
+    {
+      src: "/images/education/donation-02.jpg",
+      alt:
+        "Donated learning materials being provided to children through the education programme",
+    },
+    {
+      src: "/images/education/donation-03.jpg",
+      alt:
+        "Community members receiving donated educational support from Brook of Destiny Foundation",
+    },
+  ],
 
-    video: "/videos/education/classroom-tour-01.mp4",
+  video: "/videos/education/classroom-tour-01.mp4",
 
-    icon: "graduation",
-  },
+  icon: "graduation",
+},
+
 
   {
     slug: "youth-mentorship",
