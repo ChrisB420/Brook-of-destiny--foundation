@@ -2,27 +2,30 @@ export const SITE = {
   name: "Brook of Destiny Foundation",
   shortName: "Brook of Destiny",
   tagline: "Nurturing Destinies, Transforming Communities.",
-  domain: "brookofdestinyfoundation.org",
-  email: "info@brookofdestinyfoundation.org",
+  domain: "brookofdestinyfoundation.com",
+  email: "brookofdestiny@gmail.com",
   phoneLabel: "Email or the form — we reply personally",
   location: {
-    town: "Lugulu",
-    area: "Webuye West Sub-County",
+    town: "Webuye",
+    area: "Webuye East Sub-County",
     county: "Bungoma County",
     country: "Kenya",
-    line: "Lugulu, Webuye West, Bungoma County, Kenya",
-    note: "Along the Webuye–Kitale road, in the green highlands of western Kenya.",
+    line: "Webuye East, Bungoma County, Kenya",
+    note: "Along the Webuye–Kitale road,.",
   },
-  giving: {
-    paybill: "522533",
-    account: "8103797",
-    accountName: "Brook of Destiny Foundation",
-    bank: "KCB Bank Kenya",
-  },
+giving: {
+  paybill: "522533",
+  mpesaAccount: "8103797",
+  accountName: "Brook of Destiny Foundation",
+  bank: "KCB Bank",
+  bankAccount: "1353143589",
+},
+
   social: {
     tiktok: "https://www.tiktok.com/@brookofdestinyfoundation",
     facebook: "https://www.facebook.com/brookofdestinyfoundation",
     instagram: "https://www.instagram.com/brookofdestinyfoundation",
+    youtube:"https://youtube.com/@brookofdestinyfoundation?si=1ljmyn8UQP974fPM",
   },
   verse: {
     text: "They are like trees planted by streams of water, which yield their fruit in its season.",
@@ -32,6 +35,7 @@ export const SITE = {
 
 export const NAV = [
   { to: "/about" as const, label: "About" },
+  { to: "/team" as const, label: "Our Team" },
   { to: "/programmes" as const, label: "Programmes" },
   { to: "/impact" as const, label: "Impact" },
   { to: "/get-involved" as const, label: "Get involved" },
@@ -56,6 +60,14 @@ export type Programme = {
   body: string[];
   image: string;
   imageAlt: string;
+
+  images?: {
+    src: string;
+    alt: string;
+  }[];
+
+  video?: string;
+
   icon:
     | "graduation"
     | "users"
@@ -66,6 +78,7 @@ export type Programme = {
     | "home"
     | "trees";
 };
+
 
 export const PROGRAMMES: Programme[] = [
   {
@@ -79,9 +92,10 @@ export const PROGRAMMES: Programme[] = [
       "We walk with selected learners and families — paying what is needed, visiting schools, and pairing each scholarship with a mentor so that support is more than a receipt. We want young people who finish, not only those who start.",
       "Partners can sponsor a learner for a term or a year, gift examination kits, or help us grow a revolving scholarship fund as the Foundation builds its capacity.",
     ],
-    image: "/images/education.jpg",
+    image: "/images/education/classroom-02.jpg",
     imageAlt:
       "Young people studying with a mentor in a sunlit classroom in western Kenya",
+    video: "/videos/education/classroom-tour-01.mp4",
     icon: "graduation",
   },
   {
@@ -95,27 +109,50 @@ export const PROGRAMMES: Programme[] = [
       "Our mentorship circles gather under trees, in halls, and after Sunday meetings. We mix life skills, career guidance, and Christian discipleship — helping youth read their gifts in the light of Scripture and the needs of their community.",
       "We welcome volunteer mentors from churches, campuses, and the diaspora who can commit to a season of presence, not a one-day event.",
     ],
-    image: "/images/mentorship.jpg",
+    image: "/images/education/classroom-04.jpg",
     imageAlt:
       "A youth mentorship circle seated under a tree in the western Kenya highlands",
     icon: "users",
   },
-  {
-    slug: "faith",
-    title: "Faith, Evangelism & Discipleship",
-    short: "Christ at the centre",
-    summary:
-      "The Gospel is not an add-on. We preach Christ, make disciples, and plant habits of prayer, Scripture, and service in every programme.",
-    body: [
-      "Brook of Destiny Foundation is unapologetically Christian. We believe lasting community transformation begins with lives made new in Jesus Christ — and that faith without practical love is empty.",
-      "We support local churches in Lugulu and surrounding congregations with evangelism outreaches, Bible study, and discipleship of new believers. Field activities open with prayer; scholarships and livelihoods are framed as stewardship, not luck.",
-      "Churches and mission partners are invited to labour with us: crusades and quiet follow-up, pulpits and kitchen tables, the Word and a sack of seed.",
-    ],
-    image: "/images/faith.jpg",
-    imageAlt:
-      "A congregation gathered in worship under an open-air shelter in rural Kenya",
-    icon: "book",
-  },
+ {
+  slug: "faith",
+  title: "Faith, Evangelism & Discipleship",
+  short: "Christ at the centre",
+  summary:
+    "The Gospel is not an add-on. We preach Christ, make disciples, and plant habits of prayer, Scripture, and service in every programme.",
+  body: [
+    "Brook of Destiny Foundation is unapologetically Christian. We believe lasting community transformation begins with lives made new in Jesus Christ — and that faith without practical love is empty.",
+    "We support local churches in Lugulu and surrounding congregations with evangelism outreaches, Bible study, and discipleship of new believers. Field activities open with prayer; scholarships and livelihoods are framed as stewardship, not luck.",
+    "Churches and mission partners are invited to labour with us: crusades and quiet follow-up, pulpits and kitchen tables, the Word and a sack of seed.",
+  ],
+
+  image: "/images/faith/bible-01.jpeg",
+
+  imageAlt:
+    "Sponsors presenting Bibles as part of a Christian faith and discipleship initiative",
+
+  images: [
+    {
+      src: "/images/faith/bible-01.jpeg",
+      alt: "Sponsors presenting Bibles during a Brook of Destiny Foundation faith initiative",
+    },
+    {
+      src: "/images/faith/bible-02.jpeg",
+      alt: "Bibles being provided through a Christian discipleship and outreach initiative",
+    },
+    {
+      src: "/images/faith/bible-03.jpeg",
+      alt: "Sponsors supporting Bible distribution and Christian ministry",
+    },
+    {
+      src: "/images/faith/bible-04.jpeg",
+      alt: "Sponsors supporting Bible distribution and Christian ministry",
+    },
+  ],
+
+  icon: "book",
+},
+
   {
     slug: "health",
     title: "Health & Psychosocial Support",
@@ -127,9 +164,10 @@ export const PROGRAMMES: Programme[] = [
       "Psychosocial support sits beside the medical. Orphans, young mothers, and caregivers need someone who will listen. We train lay counsellors and walk with those who need more specialised care.",
       "We are still building this work. Medical professionals, counsellors, and partners who can supply kits or fund a clinic day are needed.",
     ],
-    image: "/images/health.jpg",
+    image: "/images/feeding/distribution-02.jpg",
     imageAlt:
       "Community health volunteers in reflective jackets speaking with residents under a shade tent",
+    video: "videos/feeding/feeding-kids.mp4",
     icon: "stethoscope",
   },
   {
@@ -143,7 +181,7 @@ export const PROGRAMMES: Programme[] = [
       "We train groups in agribusiness basics — soil, record-keeping, savings, and stewardship — and help promising groups access starter inputs. The aim is dignity: families who feed themselves and tithe from increase, not permanent relief.",
       "Agronomists, SACCO partners, and friends who can fund a demonstration plot or a village savings cycle are especially welcome.",
     ],
-    image: "/images/farming.jpg",
+    image: "/images/farming/tree-planting-02.jpg",
     imageAlt:
       "Farmers tending maize and vegetables in the green highlands of Bungoma County",
     icon: "sprout",
@@ -159,7 +197,7 @@ export const PROGRAMMES: Programme[] = [
       "We run parenting conversations in halls and homesteads: listening, Scripture, practical tools for discipline without violence, and support for caregivers who are raising children that are not their own.",
       "This is quiet work. It needs facilitators, printed guides in Kiswahili and English, and churches willing to host a series rather than a single Sunday announcement.",
     ],
-    image: "/images/mentorship.jpg",
+    image: "/images/mentorship/parenting-01.jpeg",
     imageAlt: "Adults gathered for a teaching and conversation circle",
     icon: "heart",
   },
@@ -174,7 +212,7 @@ export const PROGRAMMES: Programme[] = [
       "We do not warehouse children. We strengthen the family or caregiver around them: school support, food in hard months, psychosocial care, and visits so that no child disappears from view. Where a child is at risk, we work with local administrators and churches.",
       "Child sponsorship, guardianship partners, and gifts in kind (blankets, sanitary pads, food parcels) make this possible as we grow.",
     ],
-    image: "/images/education.jpg",
+    image: "/images/mentorship.jpg",
     imageAlt: "Learners in a classroom receiving teaching and care",
     icon: "home",
   },
@@ -189,7 +227,7 @@ export const PROGRAMMES: Programme[] = [
       "This may be a sanitation day, a tree-planting, a peace conversation, or helping a group register so it can receive training. We move at the pace of trust.",
       "County partners, churches, and friends abroad who prefer to fund a concrete local project — rather than a general appeal — will find a ready conversation.",
     ],
-    image: "/images/hero.jpg",
+    image: "/images/team/community-02.jpeg",
     imageAlt:
       "Rolling green highland countryside and village paths in Bungoma County",
     icon: "trees",
@@ -249,25 +287,25 @@ export const INVOLVE_PATHS = [
 export const STORIES = [
   {
     title: "Classrooms that stay open",
-    image: "/images/education.jpg",
+    image: "/images/education/classroom-02.jpg",
     imageAlt: "Students and a mentor in a rural classroom",
     body: "When a learner is sent home for fees, a destiny pauses. Our education work is deliberately small and personal: we would rather walk faithfully with a few than announce numbers we cannot shepherd.",
   },
   {
     title: "Circles under the trees",
-    image: "/images/mentorship.jpg",
+    image: "/images/mentorship/circle-02.jpg",
     imageAlt: "Youth seated in a mentorship circle outdoors",
     body: "Mentorship in Lugulu does not require a conference hall. It requires adults who will sit, listen, and open Scripture. These circles are where character is formed before careers are chosen.",
   },
   {
     title: "Jackets on the path",
-    image: "/images/volunteers.jpg",
+    image: "/images/team/colleagues-01.jpg",
     imageAlt: "Volunteers in reflective jackets speaking with residents",
     body: "You will know our volunteers by the reflective jackets and by the time they take. Outreach is not a photograph. It is a conversation at a homestead, a referral, a prayer, a return visit.",
   },
   {
     title: "Fields that feed more than hunger",
-    image: "/images/farming.jpg",
+    image: "/images/farming/tree-planting-01.jpg",
     imageAlt: "Farmers working a maize plot in Bungoma County",
     body: "Livelihoods training treats farming as calling and craft. A well-kept plot is a sermon about stewardship — and a way a household stops waiting for the next handout.",
   },

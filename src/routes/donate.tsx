@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/donate")({
   component: Donate,
   head: () => ({
-    meta: [{ title: "Donate — Brook of Destiny Foundation" }],
+    meta: [{ title: "Partner With Us — Brook of Destiny Foundation" }],
   }),
 });
 
@@ -16,8 +16,8 @@ const STEPS = [
   "Open M-PESA on your phone",
   "Choose Lipa na M-PESA, then Pay Bill",
   `Enter business number ${SITE.giving.paybill}`,
-  `Enter account number ${SITE.giving.account}`,
-  "Enter the amount the Lord has placed on your heart",
+  `Enter account number ${SITE.giving.mpesaAccount}`,
+  "Enter the amount you would like to give",
   "Enter your M-PESA PIN and confirm",
 ];
 
@@ -25,107 +25,207 @@ function Donate() {
   return (
     <>
       <PageHero
-        kicker="Give"
-        title="Support our work"
-        lede="Every shilling is a seed. Give through M-Pesa or KCB, sponsor a learner, or send a gift in kind — we will steward it in Lugulu."
+        kicker="Partner With Us"
+        title="Make a Difference"
+        lede="Your support helps us nurture destinies and transform communities through faith, education, empowerment, psychosocial support, and community outreach."
         image="/images/farming.jpg"
-        imageAlt="Farmers working the land in Bungoma County"
+        imageAlt="Community members working together in Bungoma County"
       />
 
-      <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
-        <div>
+      {/* GIVING DETAILS */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
-            M-Pesa Paybill
+            Support Brook of Destiny Foundation
           </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold">
-            The fastest way to give from Kenya
+
+          <h2 className="mt-3 font-display text-3xl font-semibold text-forest sm:text-4xl">
+            Together, We Can Change Lives
           </h2>
-          <BrookRule className="mt-4" />
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <CopyField label="Paybill (business number)" value={SITE.giving.paybill} large />
-            <CopyField label="Account number" value={SITE.giving.account} large />
-          </div>
-          <p className="mt-4 text-sm text-muted">
-            Account name: {SITE.giving.accountName}. Tap a number to copy it.
+
+          <BrookRule className="mx-auto mt-5" />
+
+          <p className="mt-5 text-muted">
+            We empower vulnerable children, youth, and families through
+            practical support, education, mentorship, livelihoods, and
+            community outreach.
           </p>
-          <ol className="mt-8 space-y-3">
-            {STEPS.map((step, i) => (
-              <li key={step} className="flex gap-3">
-                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-forest font-display text-sm text-gold">
-                  {i + 1}
-                </span>
-                <span className="pt-1 text-sm text-ink">{step}</span>
-              </li>
-            ))}
-          </ol>
         </div>
 
-        <div className="rounded-2xl bg-forest p-6 text-cream sm:p-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
-            Bank transfer
-          </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold text-cream">
-            {SITE.giving.bank}
-          </h2>
-          <dl className="mt-6 space-y-4 text-sm">
-            <div>
-              <dt className="text-gold-soft">Account name</dt>
-              <dd className="mt-1 text-lg text-cream">{SITE.giving.accountName}</dd>
+        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+          {/* M-PESA */}
+          <div className="rounded-2xl border border-line bg-card p-6 shadow-soft sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+              Through M-PESA
+            </p>
+
+            <h3 className="mt-3 font-display text-2xl font-semibold text-forest">
+              Give from Kenya
+            </h3>
+
+            <BrookRule className="mt-4" />
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <CopyField
+                label="Paybill Business Number"
+                value={SITE.giving.paybill}
+                large
+              />
+
+              <CopyField
+                label="Account Number"
+                value={SITE.giving.mpesaAccount}
+                large
+              />
             </div>
-            <div>
-              <dt className="text-gold-soft">Account number</dt>
-              <dd className="mt-1 font-display text-2xl text-cream">
-                {SITE.giving.account}
-              </dd>
+
+            <p className="mt-4 text-sm text-muted">
+              Account name:{" "}
+              <span className="font-semibold text-ink">
+                {SITE.giving.accountName}
+              </span>
+            </p>
+
+            <div className="mt-8">
+              <h4 className="font-display text-xl font-semibold text-forest">
+                How to Give
+              </h4>
+
+              <ol className="mt-5 space-y-3">
+                {STEPS.map((step, index) => (
+                  <li key={step} className="flex items-start gap-3">
+                    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-forest font-display text-sm font-semibold text-gold">
+                      {index + 1}
+                    </span>
+
+                    <span className="pt-1 text-sm text-ink">{step}</span>
+                  </li>
+                ))}
+              </ol>
             </div>
-            <div>
-              <dt className="text-gold-soft">Paybill for this account</dt>
-              <dd className="mt-1 text-lg text-cream">{SITE.giving.paybill}</dd>
+          </div>
+
+          {/* BANK */}
+          <div className="rounded-2xl bg-forest p-6 text-cream shadow-soft sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
+              Direct Bank Deposit
+            </p>
+
+            <h3 className="mt-3 font-display text-2xl font-semibold text-cream">
+              {SITE.giving.bank}
+            </h3>
+
+            <BrookRule className="mt-4" />
+
+            <dl className="mt-8 space-y-6">
+              <div>
+                <dt className="text-sm text-gold-soft">Account Name</dt>
+                <dd className="mt-1 text-lg text-cream">
+                  {SITE.giving.accountName}
+                </dd>
+              </div>
+
+              <div>
+                <dt className="text-sm text-gold-soft">
+                  Bank Account Number
+                </dt>
+                <dd className="mt-1 break-all font-display text-3xl font-semibold tracking-wide text-cream">
+                  {SITE.giving.bankAccount}
+                </dd>
+              </div>
+            </dl>
+
+            <div className="mt-8 rounded-xl border border-gold/30 bg-black/10 p-4">
+              <p className="text-sm leading-6 text-cream/80">
+                Every contribution helps us support vulnerable children,
+                youth, families, and communities through practical,
+                Christ-centred programmes.
+              </p>
             </div>
-          </dl>
-          <p className="mt-6 text-sm text-cream/75">
-            For SWIFT or international wire details, write to us and we will
-            send them privately. Please include your name and the programme you
-            wish to bless.
-          </p>
-          <Button asChild variant="gold" className="mt-6">
-            <a href={`mailto:${SITE.email}?subject=International%20giving`}>
-              Request international details
-            </a>
+
+            <Button asChild variant="gold" className="mt-6">
+              <a
+                href={`mailto:${SITE.email}?subject=Donation%20Confirmation`}
+              >
+                Contact Us About Your Gift
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* WAYS TO PARTNER */}
+      <section className="bg-cream">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+              Many Ways to Partner
+            </p>
+
+            <h2 className="mt-3 font-display text-3xl font-semibold text-forest sm:text-4xl">
+              Your support can take many forms
+            </h2>
+
+            <BrookRule className="mt-4" />
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                title: "Financial Contributions",
+                body: "Give through M-PESA or direct bank deposit to strengthen our programmes and community work.",
+              },
+              {
+                title: "Education & Materials",
+                body: "Support vulnerable learners with school fees, books, uniforms, learning materials, food, or clothing.",
+              },
+              {
+                title: "Skills & Partnership",
+                body: "Offer professional expertise, volunteer service, agribusiness training, project funding, or a joint community project.",
+              },
+            ].map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-line bg-card p-6 shadow-soft"
+              >
+                <h3 className="font-display text-xl font-semibold text-forest">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-6 text-muted">
+                  {item.body}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <Button asChild className="mt-8">
+            <Link to="/contact">
+              Tell Us How You Would Like to Partner
+            </Link>
           </Button>
         </div>
       </section>
 
-      <section className="bg-cream">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <h2 className="font-display text-3xl font-semibold">Other ways to give</h2>
-          <BrookRule className="mt-4" />
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            <article className="rounded-2xl border border-line bg-card p-6 shadow-soft">
-              <h3 className="font-display text-xl text-forest">Sponsor a learner</h3>
-              <p className="mt-2 text-sm text-muted">
-                Cover a term or a year of fees, books, and a mentor. You will
-                know the name you are holding.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-line bg-card p-6 shadow-soft">
-              <h3 className="font-display text-xl text-forest">Gifts in kind</h3>
-              <p className="mt-2 text-sm text-muted">
-                Uniforms, sanitary pads, farm inputs, medical kits, and food
-                parcels — tell us before you send so we can receive well.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-line bg-card p-6 shadow-soft">
-              <h3 className="font-display text-xl text-forest">Church collections</h3>
-              <p className="mt-2 text-sm text-muted">
-                Congregations may designate an offering for Brook of Destiny.
-                We are glad to send a short briefing for your missions Sunday.
-              </p>
-            </article>
-          </div>
-          <Button asChild className="mt-8">
-            <Link to="/contact">Tell us how you would like to give</Link>
-          </Button>
+      {/* CLOSING */}
+      <section className="bg-forest-deep px-4 py-16 text-center text-cream sm:px-6">
+        <div className="mx-auto max-w-3xl">
+          <p className="font-display text-3xl font-semibold sm:text-4xl">
+            Thank you for partnering with us.
+          </p>
+
+          <BrookRule className="mx-auto mt-5" />
+
+          <p className="mt-6 text-cream/80">
+            Together, we can nurture destinies and transform communities.
+          </p>
+
+          <p className="mt-6 font-display text-lg text-gold-soft">
+            “Whoever is generous to the poor lends to the LORD, and He will
+            repay him for his deed.”
+          </p>
+
+          <p className="mt-2 text-sm text-cream/60">— Proverbs 19:17</p>
         </div>
       </section>
     </>
