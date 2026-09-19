@@ -13,12 +13,14 @@ export const SITE = {
     line: "Webuye East, Bungoma County, Kenya",
     note: "Along the Webuye–Kitale road,.",
   },
-  giving: {
-    paybill: "522533",
-    account: "8103797",
-    accountName: "Brook of Destiny Foundation",
-    bank: "KCB Bank Kenya",
-  },
+giving: {
+  paybill: "522533",
+  mpesaAccount: "8103797",
+  accountName: "Brook of Destiny Foundation",
+  bank: "KCB Bank",
+  bankAccount: "1353143589",
+},
+
   social: {
     tiktok: "https://www.tiktok.com/@brookofdestinyfoundation",
     facebook: "https://www.facebook.com/brookofdestinyfoundation",
