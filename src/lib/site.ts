@@ -6,12 +6,12 @@ export const SITE = {
   email: "brookofdestiny@gmail.com",
   phoneLabel: "Email or the form — we reply personally",
   location: {
-    town: "Lugulu",
-    area: "Webuye West Sub-County",
+    town: "Webuye",
+    area: "Webuye East Sub-County",
     county: "Bungoma County",
     country: "Kenya",
-    line: "Lugulu, Webuye West, Bungoma County, Kenya",
-    note: "Along the Webuye–Kitale road, in the green highlands of western Kenya.",
+    line: "Webuye East, Bungoma County, Kenya",
+    note: "Along the Webuye–Kitale road,.",
   },
   giving: {
     paybill: "522533",
