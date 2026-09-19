@@ -363,7 +363,7 @@ export const PROGRAMMES: Programme[] = [
 
     images: [
       {
-        src: "/images/mentorship.jpg",
+        src: "/images/community-02.jpeg",
         alt: "Children and young people participating in a learning activity",
       },
     ],
