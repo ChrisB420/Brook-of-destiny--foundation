@@ -145,12 +145,15 @@ export const PROGRAMMES: Programme[] = [
     },
     // Scholarship photos
     {
-      src: "/images/education/scholarship-01.jpeg",
-      alt:
-        "A learner receiving educational scholarship support from Brook of Destiny Foundation",
-    },
-    
+  src: "/images/education/scholarship-01.jpeg",
+  alt:
+    "A learner receiving educational scholarship support from Brook of Destiny Foundation",
+  className: "object-cover object-top",
+},
+
+  
     // Sponsorship photos
+    
     {
       src: "/images/education/sponsorship-01.jpeg",
       alt:
