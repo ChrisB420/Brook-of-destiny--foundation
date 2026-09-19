@@ -24,38 +24,47 @@ function About() {
       />
 
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
-            Who we are
-          </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-            History held in a name
-          </h2>
-          <BrookRule className="mt-4" />
-          <div className="mt-6 space-y-4 text-muted">
-            <p>
-              Brook of Destiny Foundation grew from a simple observation in
-              Lugulu: destinies stall for ordinary reasons — a missed school
-              term, a parent without tools, a young person without a mentor, a
-              household without seed. We exist to meet those reasons with the
-              Gospel and with work.
-            </p>
-            <p>
-              We are based in Lugulu, a market centre in Webuye West
-              Sub-County, Bungoma County, on the highland road between Webuye
-              and Kitale. The land here is green. The need is specific. The
-              people are predominantly Luhya, many of them Bukusu — farmers,
-              traders, churchgoers, and families who already know how to hope.
-            </p>
-            <p>
-              We are building a sustainable organization with a wider vision
-              for impact. We welcome churches, individuals, institutions,
-              development organizations, foundations, businesses, and partners
-              who share our commitment to transforming lives and building
-              stronger, resilient communities.
-            </p>
-          </div>
-        </div>
+  <div>
+    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+      Who we are
+    </p>
+
+    <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+      Nurturing destinies, transforming communities
+    </h2>
+
+    <BrookRule className="mt-4" />
+
+    <div className="mt-6 space-y-4 text-muted">
+      <p>
+        Brook of Destiny Foundation was established with a desire to nurture
+        God-given destinies, restore hope, and contribute to the transformation
+        of vulnerable communities. We are a Christian-based non-profit
+        organization committed to promoting holistic community well-being
+        through practical, compassionate, and sustainable initiatives.
+      </p>
+
+      <p>
+        Our work brings together education, youth empowerment, health and
+        psychosocial support, parenting and family strengthening, sustainable
+        livelihoods, humanitarian support, evangelism, and discipleship. We
+        work with children, young people, families, and communities, seeking to
+        respond to human needs while creating opportunities for growth,
+        dignity, and resilience.
+      </p>
+
+      <p>
+        Our office base is in Bungoma County, Kenya, with programme reach
+        extending to Bungoma, Busia, Trans Nzoia, Kakamega, Nairobi, and
+        Kajiado. We are strengthening our institutional capacity and building
+        strategic partnerships with churches, organizations, foundations,
+        businesses, professionals, and individuals who share our commitment to
+        transforming lives and building stronger, resilient communities.
+      </p>
+    </div>
+  </div>
+</section>
+
         <img
           src="/images/logo.jpeg"
           alt="Green highland countryside around Lugulu in Bungoma County"
