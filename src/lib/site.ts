@@ -133,14 +133,14 @@ export const PROGRAMMES: Programme[] = [
     "Walk with a child. Support their education. Nurture their destiny. Your partnership can help transform a difficult beginning into a journey of hope, learning, opportunity, and possibility.",
   ],
 
-  image: "/images/education/education-01.jpeg",
+  image: "/images/education/education-02.jpeg",
 
   imageAlt:
     "Young learners studying with a mentor in a classroom in western Kenya",
 
   images: [
       {
-      src: "/images/education/education-02.jpeg",
+      src: "/images/education/education-01.jpeg",
       alt: "Young learners studying together in a classroom",
     },
     // Scholarship photos
@@ -404,7 +404,7 @@ export const PROGRAMMES: Programme[] = [
       "Child sponsorship, caregiver support, gifts in kind, and long-term partnerships can help us extend this work to more vulnerable children.",
     ],
 
-    image: "/images/mentorship.jpg",
+    image: "/images/team/community-02.jpeg",
 
     imageAlt:
       "Learners receiving teaching, care, and support in a community setting",
@@ -441,14 +441,14 @@ export const PROGRAMMES: Programme[] = [
       "Churches, county and community partners, organizations, and friends who want to support specific local projects are welcome to begin a conversation with us.",
     ],
 
-    image: "/images/team/community-02.jpeg",
+    image: "/images/team/community-03.jpeg",
 
     imageAlt:
       "Community members participating in a development activity in Bungoma County",
 
     images: [
       {
-        src: "/images/team/community-02.jpeg",
+        src: "/images/team/community-03.jpeg",
         alt: "Community members working together on a local development initiative",
       },
     ],
