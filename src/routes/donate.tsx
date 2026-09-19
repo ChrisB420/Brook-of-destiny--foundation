@@ -32,7 +32,7 @@ function Donate() {
         imageAlt="Community members working together in Bungoma County"
       />
 
-      {/* SUPPORT INTRO */}
+      {/* GIVING DETAILS */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
@@ -46,22 +46,21 @@ function Donate() {
           <BrookRule className="mx-auto mt-5" />
 
           <p className="mt-5 text-muted">
-            We empower vulnerable children, youth, and families through faith
-            and mentorship, education, livelihood empowerment, psychosocial
-            support, and charity and community outreach.
+            We empower vulnerable children, youth, and families through
+            practical support, education, mentorship, livelihoods, and
+            community outreach.
           </p>
         </div>
 
-        {/* LOCAL + INTERNATIONAL */}
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
           {/* M-PESA */}
           <div className="rounded-2xl border border-line bg-card p-6 shadow-soft sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
-              For Donors in Kenya
+              Through M-PESA
             </p>
 
             <h3 className="mt-3 font-display text-2xl font-semibold text-forest">
-              Give Through M-PESA
+              Give from Kenya
             </h3>
 
             <BrookRule className="mt-4" />
@@ -106,32 +105,19 @@ function Donate() {
             </div>
           </div>
 
-          {/* INTERNATIONAL / BANK */}
+          {/* BANK */}
           <div className="rounded-2xl bg-forest p-6 text-cream shadow-soft sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
-              For Donors Worldwide
+              Direct Bank Deposit
             </p>
 
             <h3 className="mt-3 font-display text-2xl font-semibold text-cream">
-              International Giving
+              {SITE.giving.bank}
             </h3>
 
             <BrookRule className="mt-4" />
 
-            <p className="mt-5 text-sm leading-6 text-cream/80">
-              Donors outside Kenya can support Brook of Destiny Foundation
-              through an international bank transfer to our KCB Bank account.
-              KCB supports international transfers through SWIFT.{" "}
-            </p>
-
-            <dl className="mt-8 space-y-5">
-              <div>
-                <dt className="text-sm text-gold-soft">Bank</dt>
-                <dd className="mt-1 text-lg text-cream">
-                  {SITE.giving.bank}
-                </dd>
-              </div>
-
+            <dl className="mt-8 space-y-6">
               <div>
                 <dt className="text-sm text-gold-soft">Account Name</dt>
                 <dd className="mt-1 text-lg text-cream">
@@ -140,40 +126,28 @@ function Donate() {
               </div>
 
               <div>
-                <dt className="text-sm text-gold-soft">Account Number</dt>
+                <dt className="text-sm text-gold-soft">
+                  Bank Account Number
+                </dt>
                 <dd className="mt-1 break-all font-display text-3xl font-semibold tracking-wide text-cream">
                   {SITE.giving.bankAccount}
-                </dd>
-              </div>
-
-              <div>
-                <dt className="text-sm text-gold-soft">SWIFT / BIC</dt>
-                <dd className="mt-1 font-display text-2xl font-semibold text-cream">
-                  KCBLKENX
-                </dd>
-              </div>
-
-              <div>
-                <dt className="text-sm text-gold-soft">Country</dt>
-                <dd className="mt-1 text-lg text-cream">
-                  Kenya
                 </dd>
               </div>
             </dl>
 
             <div className="mt-8 rounded-xl border border-gold/30 bg-black/10 p-4">
               <p className="text-sm leading-6 text-cream/80">
-                International donors should confirm the receiving bank
-                details and any applicable transfer requirements with their
-                bank before sending funds.
+                Every contribution helps us support vulnerable children,
+                youth, families, and communities through practical,
+                Christ-centred programmes.
               </p>
             </div>
 
             <Button asChild variant="gold" className="mt-6">
               <a
-                href={`mailto:${SITE.email}?subject=International%20Donation%20Enquiry`}
+                href={`mailto:${SITE.email}?subject=Donation%20Confirmation`}
               >
-                Contact Us About International Giving
+                Contact Us About Your Gift
               </a>
             </Button>
           </div>
@@ -185,11 +159,11 @@ function Donate() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
-              Everyone Can Partner
+              Many Ways to Partner
             </p>
 
             <h2 className="mt-3 font-display text-3xl font-semibold text-forest sm:text-4xl">
-              Many Ways to Make a Difference
+              Your support can take many forms
             </h2>
 
             <BrookRule className="mt-4" />
@@ -199,7 +173,7 @@ function Donate() {
             {[
               {
                 title: "Financial Contributions",
-                body: "Give through M-PESA, local bank deposit, or international bank transfer to strengthen our programmes.",
+                body: "Give through M-PESA or direct bank deposit to strengthen our programmes and community work.",
               },
               {
                 title: "Education & Materials",
@@ -251,9 +225,7 @@ function Donate() {
             repay him for his deed.”
           </p>
 
-          <p className="mt-2 text-sm text-cream/60">
-            — Proverbs 19:17
-          </p>
+          <p className="mt-2 text-sm text-cream/60">— Proverbs 19:17</p>
         </div>
       </section>
     </>
