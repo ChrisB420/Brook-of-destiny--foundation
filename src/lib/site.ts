@@ -117,7 +117,7 @@ export const PROGRAMMES: Programme[] = [
       "Walk with a child. Support their education. Nurture their destiny. Your partnership can help transform a difficult beginning into a journey of hope, learning, opportunity, and possibility.",
     ],
 
-    image: "/images/education/classroom-02.jpg",
+    image: "/images/education/education-01.jpg",
 
     imageAlt:
       "Young learners studying with a mentor in a classroom in western Kenya",
