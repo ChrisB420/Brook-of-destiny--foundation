@@ -281,26 +281,32 @@ export const PROGRAMMES: Programme[] = [
     icon: "book",
   },
 
-  {
+{
     slug: "health",
 
     title: "Health & Psychosocial Support",
 
-    short: "Care for body and mind",
+    short: "Healthy people, strong families",
 
     summary:
-      "Community health outreach, referral support, health education, and psychosocial care for families facing hardship.",
+      "Promoting health education, preventive care, nutrition, sanitation, medical outreach, appropriate referrals, and psychosocial support for individuals and families.",
 
     body: [
-      "For many families, access to health services can be affected by distance, cost, limited information, and stigma. We work alongside community health volunteers and local partners to connect families with appropriate support.",
+      "At Brook of Destiny Foundation, we believe that healthy individuals and families are better equipped to learn, work, raise children, and contribute meaningfully to their communities. Our health programme takes a holistic approach, addressing not only illness, but also prevention, healthy living, nutrition, sanitation, emotional well-being, and access to appropriate care.",
 
-      "Our health activities may include community outreach, health education, referrals, and support for families who need help navigating available services.",
+      "We work with health professionals, community health workers, medical facilities, churches, and other partners to bring essential health information and services closer to communities that may face barriers such as cost, distance, limited information, or stigma.",
 
-      "We also recognise the emotional and psychological weight carried by children, young mothers, caregivers, and families experiencing grief, poverty, illness, or other difficult circumstances.",
+      "Our activities may include community medical camps and health outreach programmes designed to respond to health conditions and needs affecting communities. Through these initiatives, we seek to facilitate health education, basic screening and early identification of health concerns, appropriate referrals, preventive health services, and follow-up support.",
 
-      "Psychosocial support therefore sits alongside practical health support. We seek to provide compassionate listening and appropriate referrals where specialised care is needed.",
+      "We also promote practical knowledge on hygiene, sanitation, clean and safe water, nutrition, maternal and child health, disease prevention, and healthy family practices. Our aim is to empower individuals and families with information that can help them make informed decisions and prevent avoidable health challenges.",
 
-      "Medical professionals, counsellors, community health workers, and partners who can support outreach activities are welcome to join this work.",
+      "Recognising that health extends beyond the physical, we provide psychosocial support to children, young mothers, caregivers, and families experiencing grief, poverty, illness, displacement, or other difficult circumstances. We offer compassionate listening, encouragement, and appropriate referrals to qualified professionals and specialised services where necessary.",
+
+      "Through partnerships, we seek to strengthen community capacity to identify health challenges early, promote preventive care, and connect people with appropriate medical and psychosocial services.",
+
+      "Medical professionals, nurses, clinical officers, counsellors, nutritionists, community health workers, health institutions, churches, donors, and other partners are invited to join us in expanding access to health education, medical outreach, screening, preventive care, nutrition, sanitation, and psychosocial support.",
+
+      "Healthy People. Strong Families. Resilient Communities.",
     ],
 
     image: "/images/feeding/distribution-02.jpg",
