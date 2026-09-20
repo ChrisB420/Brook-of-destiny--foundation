@@ -222,26 +222,36 @@ export const PROGRAMMES: Programme[] = [
     icon: "users",
   },
 
-  {
+ {
     slug: "faith",
 
-    title: "Faith, Evangelism & Discipleship",
+    title: "Faith, Evangelism & Kingdom Transformation",
 
-    short: "Christ at the centre",
+    short: "Christ at the centre, faith in action",
 
     summary:
-      "The Gospel is not an add-on. We preach Christ, make disciples, encourage prayer and Scripture, and express faith through practical service.",
+      "Christ-centered evangelism, discipleship, church strengthening, leadership development, and practical Kingdom initiatives that help churches and communities grow in faith and service.",
 
     body: [
-      "Brook of Destiny Foundation is unapologetically Christian. We believe lasting transformation begins with lives being renewed through Jesus Christ and that genuine faith expresses itself through love, compassion, service, and responsibility.",
+      "Brook of Destiny Foundation is unapologetically Christian. We believe that lasting transformation begins with lives renewed through Jesus Christ and that genuine faith expresses itself through love, compassion, service, stewardship, and responsibility.",
 
-      "We support local churches and Christian communities through evangelism, Bible study, prayer, discipleship, and follow-up of new believers.",
+      "Our vision for transformation therefore extends beyond individual spiritual growth. We desire to see Christ-centered individuals, families, and local churches become healthy, equipped, and effective agents of transformation within their communities.",
 
-      "Our faith also shapes how we approach practical community work. Education, livelihoods, health, parenting, and child protection are opportunities to demonstrate the love of Christ through responsible service.",
+      "We work alongside churches and Christian communities through evangelism, Bible study, prayer, discipleship, leadership development, and follow-up of new believers.",
 
-      "We desire to see individuals and families grow in their knowledge of Scripture, their relationship with Christ, and their willingness to serve others.",
+      "We also believe that strong churches need capacity to serve their communities effectively. Through strategic partnerships, we seek to strengthen local churches with relevant knowledge, leadership, and practical resources, helping them grow in their ability to carry out the mission of God and contribute to the well-being of their communities.",
 
-      "Churches, mission partners, and Christian organizations are invited to labour with us through outreach, discipleship, prayer, teaching, and long-term partnership.",
+      "Where opportunities arise, our Kingdom Empowerment initiatives may support practical community needs through projects such as construction and improvement of church and community facilities, provision of safe water through water and borehole projects, educational and livelihood initiatives, and other community infrastructure that enables churches to serve people with dignity and sustainability.",
+
+      "Our approach connects faith with practical transformation. Education, health, livelihoods, parenting, child protection, clean water, and community development are not separate from our Christian identity; they provide opportunities to demonstrate the love of Christ through responsible and compassionate service.",
+
+      "We desire to see churches move from simply gathering people to becoming equipped centres of hope, discipleship, service, and community transformation—reflecting the values of the Kingdom of God in their communities.",
+
+      "We therefore welcome churches, mission agencies, Christian organizations, donors, professionals, and other partners to labour with us through prayer, evangelism, discipleship, leadership development, capacity building, teaching, community projects, and long-term strategic partnerships.",
+
+      "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. — Ephesians 2:10.",
+
+      "Building People. Strengthening Churches. Empowering Communities. Advancing the Kingdom of God.",
     ],
 
     image: "/images/faith/bible-01.jpeg",
