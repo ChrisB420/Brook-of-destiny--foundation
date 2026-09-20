@@ -26,34 +26,36 @@ function Home() {
   return (
     <>
       {/* HERO */}
-<section className="relative isolate min-h-[88dvh] overflow-hidden bg-forest-deep text-cream">
-  <img
-    src="/images/hero.jpg"
-    alt="Highland paths and maize fields in Bungoma County, western Kenya"
-    className="absolute inset-0 size-full object-cover"
-  />
+      <section className="relative isolate min-h-[88dvh] overflow-hidden bg-forest-deep text-cream">
+        <img
+          src="/images/hero.jpg"
+          alt="Highland paths and maize fields in Bungoma County, western Kenya"
+          className="absolute inset-0 size-full object-cover"
+        />
 
-  <div className="absolute inset-0 bg-forest-deep/62" />
+        <div className="absolute inset-0 bg-forest-deep/62" />
 
-  {/* Main logo */}
-  <img
-    src="/images/logo.jpeg"
-    alt="Brook of Destiny Foundation"
-    className="absolute left-1/2 top-24 z-10 w-56 -translate-x-1/2 object-contain sm:left-6 sm:top-24 sm:w-60 sm:translate-x-0 md:left-6 md:w-64 lg:left-6 lg:top-28 lg:w-64 xl:left-10 xl:w-72"
-  />
+        {/* Logo hidden to keep the hero clean */}
+        <img
+          src="/images/logo.jpeg"
+          alt="Brook of Destiny Foundation"
+          className="hidden"
+        />
 
-  <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-20 lg:pl-80">
-    <div className="flex items-center gap-3">
-      <img
-        src="/images/logo.jpeg"
-        alt=""
-        className="size-16 rounded-full object-cover ring-2 ring-gold/70 sm:size-20"
-      />
+        <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-20">
+          <div className="flex items-center gap-3">
+            {/* Secondary logo hidden */}
+            <img
+              src="/images/logo.jpeg"
+              alt=""
+              className="hidden"
+            />
 
-      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-soft">
-        Bungoma County · Kenya
-      </p>
-    </div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-soft">
+              Bungoma County · Kenya
+            </p>
+          </div>
+
           <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold text-cream sm:text-6xl">
             {SITE.tagline.replace(".", "")}
           </h1>
@@ -61,7 +63,12 @@ function Home() {
           <BrookRule className="mt-5 h-4 w-48" />
 
           <p className="mt-5 max-w-xl text-base text-cream/90 sm:text-lg">
-            Brook of Destiny Foundation is a Christian non-profit organization dedicated to holistic community transformation. By integrating the Gospel with practical care, the organization delivers sustainable impact through scholarships, mentorship, health and psychosocial support, livelihood initiatives, and community development—building a supportive network around every vulnerable child and family..
+            Brook of Destiny Foundation is a Christian non-profit organization
+            dedicated to holistic community transformation. By integrating the
+            Gospel with practical care, the organization delivers sustainable
+            impact through scholarships, mentorship, health and psychosocial
+            support, livelihood initiatives, and community development—building
+            a supportive network around every vulnerable child and family.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -195,7 +202,6 @@ function Home() {
 
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-gold-deep">
                   Read more
-
                   <ArrowRight className="size-4 transition-transform duration-150 group-hover:translate-x-0.5" />
                 </span>
               </div>
