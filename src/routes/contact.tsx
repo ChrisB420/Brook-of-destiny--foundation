@@ -18,9 +18,9 @@ function Contact() {
       <PageHero
         kicker="Contact"
         title="Write, visit, or walk with us"
-        lede="The office is in Lugulu. The work is in the homesteads around it. We read every message."
+        lede="Our office is in Bungoma . We welcome conversations about partnership, volunteering, giving, and community support."
         image="/images/hero.jpg"
-        imageAlt="Village paths in the Bungoma highlands"
+        imageAlt="Village paths in Bungoma County"
       />
 
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
@@ -44,10 +44,7 @@ function Contact() {
               </span>
               <div>
                 <p className="font-medium text-forest">Email</p>
-                <a
-                  href={`mailto:${SITE.email}`}
-                  className="text-sky hover:underline"
-                >
+                <a href={`mailto:${SITE.email}`} className="text-sky hover:underline">
                   {SITE.email}
                 </a>
               </div>
@@ -58,10 +55,10 @@ function Contact() {
               </span>
               <div>
                 <p className="font-medium text-forest">Phone & WhatsApp</p>
-                <p className="text-muted">
-                  Leave a number on the form and we will return the call. Direct
-                  lines will be published here as the office grows.
-                </p>
+                <a href="tel:+254724916908" className="text-sky hover:underline">
+                  +254 724 916 908
+                </a>
+                <p className="mt-1 text-sm text-muted">Call or message us on WhatsApp.</p>
               </div>
             </li>
           </ul>
@@ -71,33 +68,27 @@ function Contact() {
               Social
             </p>
             <p className="mt-2 text-sm text-muted">
-              TikTok is already live. Facebook and Instagram are being brought
-              to the same standard as this site.
+              Follow our community work through the Foundation&apos;s verified social channels.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
+              {["tiktok", "facebook", "instagram"].map((network) => (
+                <a
+                  key={network}
+                  href={SITE.social[network as keyof typeof SITE.social]}
+                  className="inline-flex min-h-11 items-center rounded-md border border-gold/40 px-4 text-sm font-medium capitalize text-forest hover:bg-gold/10"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {network}
+                </a>
+              ))}
               <a
-                href={SITE.social.tiktok}
+                href="https://wa.me/254724916908"
                 className="inline-flex min-h-11 items-center rounded-md border border-gold/40 px-4 text-sm font-medium text-forest hover:bg-gold/10"
                 rel="noreferrer"
                 target="_blank"
               >
-                TikTok
-              </a>
-              <a
-                href={SITE.social.facebook}
-                className="inline-flex min-h-11 items-center rounded-md border border-gold/40 px-4 text-sm font-medium text-forest hover:bg-gold/10"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Facebook
-              </a>
-              <a
-                href={SITE.social.instagram}
-                className="inline-flex min-h-11 items-center rounded-md border border-gold/40 px-4 text-sm font-medium text-forest hover:bg-gold/10"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Instagram
+                WhatsApp
               </a>
             </div>
           </div>
@@ -106,8 +97,7 @@ function Contact() {
         <div className="rounded-2xl border border-line bg-card p-6 shadow-soft sm:p-8">
           <h3 className="font-display text-2xl text-forest">Send a message</h3>
           <p className="mt-2 mb-6 text-sm text-muted">
-            Partnerships, volunteering, giving, or a simple greeting — start
-            here.
+            Partnerships, volunteering, giving, or a simple greeting — start here.
           </p>
           <InquiryForm />
         </div>

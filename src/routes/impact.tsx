@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { BrookRule } from "@/components/brook-rule";
 import { PageHero } from "@/components/page-hero";
 import { Button } from "@/components/ui/button";
-import { STORIES } from "@/lib/site";
 
 export const Route = createFileRoute("/impact")({
   component: Impact,
@@ -15,86 +14,124 @@ function Impact() {
   return (
     <>
       <PageHero
-        kicker="Impact"
-        title="Faithful presence, not inflated numbers"
-        lede="We are gathering stories from the field as we grow. What we can already show you is the shape of the work: classrooms, circles, jackets on the path, and plots that feed a family."
-        image="/images/mentorship.jpg"
-        imageAlt="A mentorship circle under a tree in western Kenya"
+        kicker="Our Impact"
+        title="Rooted in Bungoma. Serving with purpose."
+        lede="Brook of Destiny Foundation is rooted in Bungoma, Kenya, with a vision that reaches beyond borders. From our local foundation, we respond to human needs, nurture potential, restore hope, and create opportunities for children, young people, families, and communities."
+        image="/images/farming/tree-planting-01.jpg"
+        imageAlt="Community life and landscape in Bungoma County, Kenya"
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="max-w-2xl">
-          <h2 className="font-display text-3xl font-semibold">From Lugulu</h2>
+        <div className="max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-deep">
+            Rooted in Bungoma
+          </p>
+
+          <h2 className="mt-2 font-display text-3xl font-semibold sm:text-4xl">
+            Local roots, a wider vision
+          </h2>
+
           <BrookRule className="mt-4" />
+
           <p className="mt-5 text-muted">
-            Brook of Destiny Foundation is still building capacity. We will not
-            publish beneficiary counts we cannot stand behind. Instead we share
-            the work as it actually looks — and we invite those who have walked
-            with us to offer a testimony, with permission, so this page can grow
-            in truth.
+            Brook of Destiny Foundation is rooted in Bungoma, Kenya, with a
+            vision that reaches beyond borders. From our local foundation, we
+            work to respond to human needs, nurture potential, restore hope,
+            and create opportunities for children, young people, families, and
+            communities.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-10">
-          {STORIES.map((story, i) => (
-            <article
-              key={story.title}
-              className="grid items-center gap-8 md:grid-cols-2"
-            >
-              <img
-                src={story.image}
-                alt={story.imageAlt}
-                className={`aspect-photo w-full rounded-2xl object-cover ${i % 2 === 1 ? "md:order-2" : ""}`}
-              />
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-deep">
-                  Field note
-                </p>
-                <h3 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
-                  {story.title}
-                </h3>
-                <p className="mt-3 text-muted">{story.body}</p>
-              </div>
-            </article>
-          ))}
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <article className="rounded-2xl border border-line bg-card p-7 shadow-soft">
+            <h3 className="font-display text-2xl font-semibold text-forest">
+              Faith That Serves
+            </h3>
+            <p className="mt-4 text-muted">
+              Our Christian foundation shapes the way we serve. Through
+              education, mentorship, evangelism, discipleship, health and
+              psychosocial support, livelihoods, and community development, we
+              seek to turn compassion into practical action and faith into
+              meaningful impact.
+            </p>
+          </article>
+
+          <article className="rounded-2xl border border-line bg-card p-7 shadow-soft">
+            <h3 className="font-display text-2xl font-semibold text-forest">
+              Growing Through Partnership
+            </h3>
+            <p className="mt-4 text-muted">
+              We are building a sustainable organization with a wider vision
+              for impact. We welcome churches, individuals, institutions,
+              development organizations, foundations, businesses, and partners
+              who share our commitment to transforming lives and building
+              stronger, resilient communities.
+            </p>
+          </article>
+
+          <article className="rounded-2xl border border-line bg-card p-7 shadow-soft">
+            <h3 className="font-display text-2xl font-semibold text-forest">
+              A Global Vision, Local Roots
+            </h3>
+            <p className="mt-4 text-muted">
+              Rooted in Bungoma. Serving with purpose. Partnering beyond
+              borders. Transforming lives.
+            </p>
+          </article>
         </div>
       </section>
 
       <section className="bg-cream">
-        <div className="mx-auto grid max-w-6xl gap-6 px-4 py-16 sm:px-6 md:grid-cols-3">
-          {[
-            {
-              title: "Where we serve",
-              body: "Lugulu and neighbouring villages in Webuye West, Bungoma County — with room to walk further as partners arrive.",
-            },
-            {
-              title: "How we measure",
-              body: "A learner who stays in school. A youth who has a mentor. A household that plants. A church that disciples. Presence you can visit.",
-            },
-            {
-              title: "What we need next",
-              body: "Governance strength, programme funding, volunteer mentors, and churches who will adopt a circle or a learner for more than a weekend.",
-            },
-          ].map((item) => (
-            <article
-              key={item.title}
-              className="rounded-2xl border border-line bg-card p-6 shadow-soft"
-            >
-              <h3 className="font-display text-xl text-forest">{item.title}</h3>
-              <p className="mt-2 text-sm text-muted">{item.body}</p>
-            </article>
-          ))}
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div className="grid gap-10 md:grid-cols-2 md:items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold-deep">
+                Our approach
+              </p>
+
+              <h2 className="mt-2 font-display text-3xl font-semibold sm:text-4xl">
+                Turning compassion into practical action
+              </h2>
+
+              <BrookRule className="mt-4" />
+
+              <p className="mt-5 text-muted">
+                Our work brings together spiritual care and practical
+                community development. We seek to walk alongside people,
+                strengthen families, nurture young people, and support
+                communities as they build sustainable futures.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-line bg-card p-7 shadow-soft">
+              <h3 className="font-display text-2xl font-semibold text-forest">
+                From Bungoma to beyond
+              </h3>
+
+              <p className="mt-4 text-muted">
+                Our local presence gives us a place to begin, while
+                partnerships give the work room to grow. We believe meaningful
+                transformation is strengthened when communities, churches,
+                institutions, businesses, and individuals work together.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
-        <h2 className="font-display text-3xl font-semibold">Share a story</h2>
+        <h2 className="font-display text-3xl font-semibold">
+          Partner with Brook of Destiny
+        </h2>
+
         <p className="mt-3 text-muted">
-          If Brook of Destiny has walked with your family, we would be honoured
-          to tell it — in your words, with your consent, never as pity.
+          Join us in nurturing destinies, transforming communities, and
+          building partnerships that extend from Bungoma to communities
+          beyond.
         </p>
+
         <Button asChild className="mt-6">
-          <Link to="/contact">Send a testimony</Link>
+          <Link to="/contact">Connect With Us</Link>
         </Button>
       </section>
     </>

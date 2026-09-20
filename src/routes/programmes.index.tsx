@@ -18,7 +18,7 @@ function Programmes() {
         kicker="Our programmes"
         title="Holistic work, one calling"
         lede="Education, faith, health, livelihoods, and the family — held together so that a destiny is not rescued in one place and lost in another."
-        image="/images/education.jpg"
+        image="/images/education/classroom-01.jpg"
         imageAlt="Young people learning in a sunlit classroom"
       />
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">

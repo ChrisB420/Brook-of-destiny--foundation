@@ -1,42 +1,62 @@
+// src/lib/site.ts
+
 export const SITE = {
   name: "Brook of Destiny Foundation",
   shortName: "Brook of Destiny",
   tagline: "Nurturing Destinies, Transforming Communities.",
-  domain: "brookofdestinyfoundation.org",
-  email: "info@brookofdestinyfoundation.org",
+  domain: "brookofdestinyfoundation.com",
+  email: "brookofdestiny@gmail.com",
+
   phoneLabel: "Email or the form — we reply personally",
+
   location: {
-    town: "Lugulu",
-    area: "Webuye West Sub-County",
+    town: "Webuye",
+    area: "Webuye East Sub-County",
     county: "Bungoma County",
     country: "Kenya",
-    line: "Lugulu, Webuye West, Bungoma County, Kenya",
-    note: "Along the Webuye–Kitale road, in the green highlands of western Kenya.",
+    line: "Webuye East, Bungoma County, Kenya",
+    note: "Along the Webuye–Kitale Road.",
   },
+
   giving: {
     paybill: "522533",
-    account: "8103797",
+    mpesaAccount: "8103797",
     accountName: "Brook of Destiny Foundation",
-    bank: "KCB Bank Kenya",
+    bank: "KCB Bank",
+    bankAccount: "1353143589",
   },
+
   social: {
     tiktok: "https://www.tiktok.com/@brookofdestinyfoundation",
     facebook: "https://www.facebook.com/brookofdestinyfoundation",
     instagram: "https://www.instagram.com/brookofdestinyfoundation",
+    youtube:
+      "https://youtube.com/@brookofdestinyfoundation?si=1ljmyn8UQP974fPM",
   },
+
   verse: {
-    text: "They are like trees planted by streams of water, which yield their fruit in its season.",
+    text:
+      "They are like trees planted by streams of water, which yield their fruit in its season.",
     ref: "Psalm 1:3",
   },
 } as const;
 
+/* -------------------------------------------------------------------------- */
+/* Navigation                                                                  */
+/* -------------------------------------------------------------------------- */
+
 export const NAV = [
   { to: "/about" as const, label: "About" },
+  { to: "/team" as const, label: "Our Team" },
   { to: "/programmes" as const, label: "Programmes" },
   { to: "/impact" as const, label: "Impact" },
-  { to: "/get-involved" as const, label: "Get involved" },
+  { to: "/get-involved" as const, label: "Get Involved" },
   { to: "/contact" as const, label: "Contact" },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* Programme Types                                                             */
+/* -------------------------------------------------------------------------- */
 
 export type ProgrammeSlug =
   | "education"
@@ -48,6 +68,23 @@ export type ProgrammeSlug =
   | "ovc"
   | "community-development";
 
+export type ProgrammeIcon =
+  | "graduation"
+  | "users"
+  | "book"
+  | "stethoscope"
+  | "sprout"
+  | "heart"
+  | "home"
+  | "trees";
+
+export type ProgrammeImage = {
+  src: string;
+  alt: string;
+  featured?: boolean;
+  className?: string;
+};
+
 export type Programme = {
   slug: ProgrammeSlug;
   title: string;
@@ -56,219 +93,663 @@ export type Programme = {
   body: string[];
   image: string;
   imageAlt: string;
-  icon:
-    | "graduation"
-    | "users"
-    | "book"
-    | "stethoscope"
-    | "sprout"
-    | "heart"
-    | "home"
-    | "trees";
+  images?: ProgrammeImage[];
+  video?: string;
+  icon: ProgrammeIcon;
 };
 
+/* -------------------------------------------------------------------------- */
+/* Programmes                                                                  */
+/* -------------------------------------------------------------------------- */
+
 export const PROGRAMMES: Programme[] = [
-  {
-    slug: "education",
-    title: "Education & Scholarships",
-    short: "Keeping learners in school",
-    summary:
-      "School fees, uniforms, books and mentoring so that bright children in Lugulu and across Bungoma County are not sent home for lack of means.",
-    body: [
-      "Education is one of the surest ways a destiny is protected. In Webuye West and the villages around Lugulu, many capable learners still miss terms because of school fees, exam levies, or the quiet cost of a uniform and a set of books.",
-      "We walk with selected learners and families — paying what is needed, visiting schools, and pairing each scholarship with a mentor so that support is more than a receipt. We want young people who finish, not only those who start.",
-      "Partners can sponsor a learner for a term or a year, gift examination kits, or help us grow a revolving scholarship fund as the Foundation builds its capacity.",
-    ],
-    image: "/images/education.jpg",
-    imageAlt:
-      "Young people studying with a mentor in a sunlit classroom in western Kenya",
-    icon: "graduation",
-  },
+ {
+  slug: "education",
+
+  title: "Education & Scholarship Support",
+
+  short: "Walk with a child. Nurture a destiny.",
+
+  summary:
+    "Helping vulnerable learners stay in school through educational assistance, mentorship, encouragement, and practical support for a brighter future.",
+
+  body: [
+    "Every child carries God-given potential, a dream, and a future worth protecting. Yet for some children, the journey through education is interrupted—not because they lack ability, but because of circumstances beyond their control.",
+
+    "School fees, uniforms, books, examination costs, learning materials, and other basic needs can become barriers that keep a child away from the classroom. At Brook of Destiny Foundation, we believe that supporting a child's education is an investment in a life and in the future of a community.",
+
+    "Through our Education & Scholarship Programme, we identify vulnerable learners and walk alongside them with educational assistance, mentorship, encouragement, and practical support as they pursue their studies.",
+
+    "Our goal is to move beyond a one-time contribution and build a meaningful journey of support. We want to help children remain in school, overcome challenges, complete their studies, discover their gifts, and prepare for their future.",
+
+    "Partners can choose to support one learner or several learners for a term, a year, or, where possible, throughout their educational journey. Support may contribute toward school fees, uniforms, books, learning materials, examination needs, mentorship, and career guidance.",
+
+    "More importantly, sponsorship communicates something every child deserves to hear: 'Your future matters. You are not walking this journey alone.'",
+
+    "We believe education is more than passing examinations. It is about nurturing character, confidence, responsibility, faith, skills, and hope. Through mentorship and encouragement, we seek to walk with learners beyond the classroom and help them prepare for meaningful futures.",
+
+    "The Bible reminds us of the importance of compassion and generosity: 'Whoever is kind to the poor lends to the LORD, and he will reward them for what they have done.' — Proverbs 19:17.",
+
+    "We cannot promise what form God's reward will take, but Scripture assures us that He sees acts of compassion and values generosity toward those in need.",
+
+    "Walk with a child. Support their education. Nurture their destiny. Your partnership can help transform a difficult beginning into a journey of hope, learning, opportunity, and possibility.",
+  ],
+
+  image: "/images/education/education-02.jpeg",
+
+  imageAlt:
+    "Young learners studying with a mentor in a classroom in western Kenya",
+
+  images: [
+    {
+      src: "/images/education/education-01.jpeg",
+      alt: "Young learners studying together in a classroom",
+    },
+
+    // Scholarship photos
+    {
+      src: "/images/education/scholarship-01.jpeg",
+      alt: "A learner receiving educational scholarship support from Brook of Destiny Foundation",
+      featured: true,
+      className: "object-top",
+    },
+
+    // Sponsorship photos
+    {
+      src: "/images/education/sponsorship-01.jpeg",
+      alt: "A child receiving support through the Brook of Destiny Foundation sponsorship programme",
+    },
+    {
+      src: "/images/education/sponsorship-02.jpeg",
+      alt: "Educational sponsorship helping a vulnerable learner continue their studies",
+    },
+
+    // Donation photos
+    {
+      src: "/images/education/donation-01.jpeg",
+      alt: "Educational supplies being provided to support vulnerable learners",
+    },
+    {
+      src: "/images/education/donation-02.jpeg",
+      alt: "Donated learning materials being provided to children through the education programme",
+    },
+    {
+      src: "/images/education/donation-03.jpeg",
+      alt: "Community members receiving donated educational support from Brook of Destiny Foundation",
+    },
+  ],
+
+  video: "/videos/education/classroom-tour-01.mp4",
+
+  icon: "graduation",
+},
+
+
   {
     slug: "youth-mentorship",
+
     title: "Youth Mentorship",
+
     short: "Guiding the next generation",
+
     summary:
-      "Discipleship-shaped mentoring for teenagers and young adults — character, skills, faith, and a clear path after school.",
+      "Discipleship-shaped mentoring for teenagers and young adults—character, life skills, faith, career guidance, and a clear path beyond school.",
+
     body: [
-      "Bungoma’s young people are hungry for more than slogans. They need trusted adults who will sit with them, pray with them, and tell the truth about work, relationships, and calling.",
-      "Our mentorship circles gather under trees, in halls, and after Sunday meetings. We mix life skills, career guidance, and Christian discipleship — helping youth read their gifts in the light of Scripture and the needs of their community.",
-      "We welcome volunteer mentors from churches, campuses, and the diaspora who can commit to a season of presence, not a one-day event.",
+      "Young people need more than encouragement from a distance. They need trusted adults who will listen to them, pray with them, guide them, challenge them, and walk alongside them as they navigate important decisions.",
+
+      "Our youth mentorship programme creates safe spaces where teenagers and young adults can discuss faith, character, relationships, education, work, purpose, leadership, and the challenges they face.",
+
+      "We combine practical life skills, career guidance, Christian discipleship, and personal development to help young people understand their gifts and use them responsibly.",
+
+      "Mentorship may happen in schools, churches, community spaces, halls, or informal gatherings under the trees. What matters most is consistent presence and genuine relationship.",
+
+      "We welcome volunteer mentors from churches, campuses, professional communities, and the diaspora who can commit to a meaningful season of presence rather than a one-day event.",
     ],
-    image: "/images/mentorship.jpg",
+
+    image: "/images/education/classroom-04.jpg",
+
     imageAlt:
-      "A youth mentorship circle seated under a tree in the western Kenya highlands",
+      "Young people participating in a mentorship session in western Kenya",
+
+    images: [
+      {
+        src: "/images/education/classroom-04.jpg",
+        alt: "Young people learning together during a mentorship session",
+      },
+    ],
+
     icon: "users",
   },
+
   {
     slug: "faith",
+
     title: "Faith, Evangelism & Discipleship",
+
     short: "Christ at the centre",
+
     summary:
-      "The Gospel is not an add-on. We preach Christ, make disciples, and plant habits of prayer, Scripture, and service in every programme.",
+      "The Gospel is not an add-on. We preach Christ, make disciples, encourage prayer and Scripture, and express faith through practical service.",
+
     body: [
-      "Brook of Destiny Foundation is unapologetically Christian. We believe lasting community transformation begins with lives made new in Jesus Christ — and that faith without practical love is empty.",
-      "We support local churches in Lugulu and surrounding congregations with evangelism outreaches, Bible study, and discipleship of new believers. Field activities open with prayer; scholarships and livelihoods are framed as stewardship, not luck.",
-      "Churches and mission partners are invited to labour with us: crusades and quiet follow-up, pulpits and kitchen tables, the Word and a sack of seed.",
+      "Brook of Destiny Foundation is unapologetically Christian. We believe lasting transformation begins with lives being renewed through Jesus Christ and that genuine faith expresses itself through love, compassion, service, and responsibility.",
+
+      "We support local churches and Christian communities through evangelism, Bible study, prayer, discipleship, and follow-up of new believers.",
+
+      "Our faith also shapes how we approach practical community work. Education, livelihoods, health, parenting, and child protection are opportunities to demonstrate the love of Christ through responsible service.",
+
+      "We desire to see individuals and families grow in their knowledge of Scripture, their relationship with Christ, and their willingness to serve others.",
+
+      "Churches, mission partners, and Christian organizations are invited to labour with us through outreach, discipleship, prayer, teaching, and long-term partnership.",
     ],
-    image: "/images/faith.jpg",
+
+    image: "/images/faith/bible-01.jpeg",
+
     imageAlt:
-      "A congregation gathered in worship under an open-air shelter in rural Kenya",
+      "Bibles being provided during a Christian faith and discipleship initiative",
+
+    images: [
+      {
+        src: "/images/faith/bible-01.jpeg",
+        alt: "Bibles presented during a Christian faith initiative",
+      },
+      {
+        src: "/images/faith/bible-02.jpeg",
+        alt: "Bibles being prepared for Christian outreach",
+      },
+      {
+        src: "/images/faith/bible-03.jpeg",
+        alt: "Christian ministry partners supporting Bible distribution",
+      },
+      {
+        src: "/images/faith/bible-04.jpeg",
+        alt: "Participants receiving Bibles during a discipleship initiative",
+      },
+    ],
+
     icon: "book",
   },
+
   {
     slug: "health",
+
     title: "Health & Psychosocial Support",
+
     short: "Care for body and mind",
+
     summary:
-      "Community health outreach, referral support, and counselling for families carrying grief, trauma, or the weight of daily hardship.",
+      "Community health outreach, referral support, health education, and psychosocial care for families facing hardship.",
+
     body: [
-      "Health in our villages is often a matter of distance, cost, and stigma. We work alongside community health volunteers — many in reflective jackets you will see in our field photos — to run outreach days, share accurate information, and help families reach clinics when they must.",
-      "Psychosocial support sits beside the medical. Orphans, young mothers, and caregivers need someone who will listen. We train lay counsellors and walk with those who need more specialised care.",
-      "We are still building this work. Medical professionals, counsellors, and partners who can supply kits or fund a clinic day are needed.",
+      "For many families, access to health services can be affected by distance, cost, limited information, and stigma. We work alongside community health volunteers and local partners to connect families with appropriate support.",
+
+      "Our health activities may include community outreach, health education, referrals, and support for families who need help navigating available services.",
+
+      "We also recognise the emotional and psychological weight carried by children, young mothers, caregivers, and families experiencing grief, poverty, illness, or other difficult circumstances.",
+
+      "Psychosocial support therefore sits alongside practical health support. We seek to provide compassionate listening and appropriate referrals where specialised care is needed.",
+
+      "Medical professionals, counsellors, community health workers, and partners who can support outreach activities are welcome to join this work.",
     ],
-    image: "/images/health.jpg",
+
+    image: "/images/feeding/distribution-02.jpg",
+
     imageAlt:
-      "Community health volunteers in reflective jackets speaking with residents under a shade tent",
+      "Community health volunteers speaking with residents during a community outreach",
+
+    video: "/videos/feeding/feeding-kids.mp4",
+
     icon: "stethoscope",
   },
+
   {
     slug: "livelihoods",
+
     title: "Livelihoods & Agribusiness",
+
     short: "Work that feeds a family",
+
     summary:
-      "Training and starter support for small farms and household enterprises — maize, kitchen gardens, poultry, and village trade.",
+      "Training and practical support for small farms and household enterprises, helping families build sustainable livelihoods and greater resilience.",
+
     body: [
-      "Most families around Lugulu live from the land: maize, sugarcane, dairy, and kitchen gardens on the red highland soil. A modest skill, a bag of seed, or a better market can change a household’s year.",
-      "We train groups in agribusiness basics — soil, record-keeping, savings, and stewardship — and help promising groups access starter inputs. The aim is dignity: families who feed themselves and tithe from increase, not permanent relief.",
-      "Agronomists, SACCO partners, and friends who can fund a demonstration plot or a village savings cycle are especially welcome.",
+      "Many families in Bungoma County depend on agriculture and small household enterprises for their livelihoods. A practical skill, improved farming method, access to inputs, savings, or a better market can make a meaningful difference to a household.",
+
+      "Our livelihoods programme promotes practical agribusiness knowledge, including soil management, record keeping, savings, stewardship, kitchen gardening, poultry, and small-scale enterprise development.",
+
+      "We seek to help individuals and groups move toward greater self-reliance and responsible stewardship of the resources entrusted to them.",
+
+      "Where resources allow, promising groups may receive starter support, demonstration opportunities, or connections to relevant technical and financial partners.",
+
+      "Agronomists, business professionals, SACCO partners, trainers, and supporters who can help fund practical livelihood initiatives are welcome to partner with us.",
     ],
-    image: "/images/farming.jpg",
+
+    image: "/images/farming/tree-planting-02.jpg",
+
     imageAlt:
-      "Farmers tending maize and vegetables in the green highlands of Bungoma County",
+      "Farmers working on agricultural activities in Bungoma County",
+
+    images: [
+      {
+        src: "/images/farming/tree-planting-01.jpg",
+        alt: "Community members participating in an agricultural and environmental activity",
+      },
+      {
+        src: "/images/farming/tree-planting-02.jpg",
+        alt: "Farmers working on a community agricultural activity",
+      },
+    ],
+
     icon: "sprout",
   },
+
   {
     slug: "parenting",
+
     title: "Parenting",
+
     short: "Strengthening the first classroom",
+
     summary:
-      "Workshops and home visits that help mothers and fathers raise children with faith, discipline, and tenderness.",
+      "Helping parents and caregivers raise children with faith, discipline, compassion, protection, and practical support.",
+
     body: [
-      "A child’s destiny is first shaped at home. Many parents in our community want to do well and have never been shown how — especially where families have been stretched by loss, work, or conflict.",
-      "We run parenting conversations in halls and homesteads: listening, Scripture, practical tools for discipline without violence, and support for caregivers who are raising children that are not their own.",
-      "This is quiet work. It needs facilitators, printed guides in Kiswahili and English, and churches willing to host a series rather than a single Sunday announcement.",
+      "A child's first environment for learning, character formation, and belonging is the home. Parents and caregivers therefore play a central role in shaping a child's future.",
+
+      "Many parents genuinely want to raise their children well but face pressures related to poverty, loss, work, family conflict, and limited access to practical parenting resources.",
+
+      "Our parenting programme creates opportunities for mothers, fathers, guardians, and caregivers to learn, share experiences, ask questions, and receive practical guidance.",
+
+      "Sessions may address positive discipline, communication, child protection, faith formation, emotional wellbeing, family relationships, and practical ways of supporting children in school.",
+
+      "We also seek to support caregivers who are raising children who are not biologically their own, recognising the important role they play in providing stability and belonging.",
     ],
-    image: "/images/mentorship.jpg",
-    imageAlt: "Adults gathered for a teaching and conversation circle",
+
+    image: "/images/mentorship/parenting-01.jpeg",
+
+    imageAlt:
+      "Adults gathered for a parenting teaching and discussion session",
+
+    images: [
+      {
+        src: "/images/mentorship/parenting-01.jpeg",
+        alt: "Parents and caregivers participating in a parenting discussion",
+      },
+    ],
+
     icon: "heart",
   },
+
   {
     slug: "ovc",
+
     title: "Orphans & Vulnerable Children",
+
     short: "A family around every child",
+
     summary:
-      "Wrap-around care for orphans and vulnerable children — school, food, protection, and a community that will not look away.",
+      "Supporting orphans and vulnerable children through education, food support, protection, psychosocial care, and stronger family networks.",
+
     body: [
-      "Some of the children we meet have lost a parent. Others live with a grandmother, an older sibling, or in a home where illness and poverty have made childhood very small.",
-      "We do not warehouse children. We strengthen the family or caregiver around them: school support, food in hard months, psychosocial care, and visits so that no child disappears from view. Where a child is at risk, we work with local administrators and churches.",
-      "Child sponsorship, guardianship partners, and gifts in kind (blankets, sanitary pads, food parcels) make this possible as we grow.",
+      "Some children we encounter have lost one or both parents. Others live with grandparents, older siblings, relatives, or caregivers who are themselves facing significant hardship.",
+
+      "Our approach is centred on the child while strengthening the family and caregiver around them. We believe children deserve safety, belonging, education, care, and the opportunity to grow in a stable environment.",
+
+      "Support may include school assistance, food support during difficult periods, psychosocial support, essential items, mentorship, household visits, and appropriate referrals.",
+
+      "Where a child may be at risk, we work with relevant local structures, caregivers, churches, and appropriate authorities to promote their safety and wellbeing.",
+
+      "Child sponsorship, caregiver support, gifts in kind, and long-term partnerships can help us extend this work to more vulnerable children.",
     ],
-    image: "/images/education.jpg",
-    imageAlt: "Learners in a classroom receiving teaching and care",
+
+    image: "/images/team/community-02.jpeg",
+
+    imageAlt:
+      "Learners receiving teaching, care, and support in a community setting",
+
+    images: [
+      {
+        src: "/images/team/community-02.jpeg",
+        alt: "Children and young people participating in a learning activity",
+      },
+    ],
+
     icon: "home",
   },
+
   {
     slug: "community-development",
+
     title: "Community Development",
-    short: "The village made stronger",
+
+    short: "The community made stronger",
+
     summary:
-      "Barazas, clean-ups, and local projects that help Lugulu and neighbouring villages act together for the common good.",
+      "Working with residents, churches, local leaders, and partners on practical initiatives that strengthen communities and promote the common good.",
+
     body: [
-      "Holistic ministry includes the path, the spring, the market, and the meeting under the tree. We convene community dialogues and labour alongside residents on small, visible improvements they themselves name.",
-      "This may be a sanitation day, a tree-planting, a peace conversation, or helping a group register so it can receive training. We move at the pace of trust.",
-      "County partners, churches, and friends abroad who prefer to fund a concrete local project — rather than a general appeal — will find a ready conversation.",
+      "Holistic community transformation includes the places where people live, work, learn, worship, and raise their families.",
+
+      "We bring residents and local partners together to identify practical needs and explore solutions that communities can own and sustain.",
+
+      "Activities may include community dialogues, sanitation initiatives, tree planting, environmental activities, peacebuilding conversations, group development, and other locally identified projects.",
+
+      "We believe sustainable development begins with listening. Rather than imposing solutions, we seek to move at the pace of trust and work alongside communities on priorities they understand and value.",
+
+      "Churches, county and community partners, organizations, and friends who want to support specific local projects are welcome to begin a conversation with us.",
     ],
-    image: "/images/hero.jpg",
+
+    image: "/images/team/community-03.jpeg",
+
     imageAlt:
-      "Rolling green highland countryside and village paths in Bungoma County",
+      "Community members participating in a development activity in Bungoma County",
+
+    images: [
+      {
+        src: "/images/team/community-03.jpeg",
+        alt: "Community members working together on a local development initiative",
+      },
+    ],
+
     icon: "trees",
   },
 ];
 
-export function getProgramme(slug: string): Programme | undefined {
-  return PROGRAMMES.find((p) => p.slug === slug);
+/* -------------------------------------------------------------------------- */
+/* Programme Helpers                                                           */
+/* -------------------------------------------------------------------------- */
+
+export function getProgramme(
+  slug: string
+): Programme | undefined {
+  return PROGRAMMES.find((programme) => programme.slug === slug);
 }
+
+export function isProgrammeSlug(
+  slug: string
+): slug is ProgrammeSlug {
+  return PROGRAMMES.some((programme) => programme.slug === slug);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Values                                                                      */
+/* -------------------------------------------------------------------------- */
 
 export const VALUES = [
   {
     title: "Christ at the centre",
-    body: "We confess Jesus Christ as Lord. Evangelism, discipleship, and prayer are not a department — they are the well from which the rest of the work is drawn.",
+
+    body:
+      "We confess Jesus Christ as Lord. Prayer, evangelism, discipleship, Scripture, and practical service shape how we approach every part of our work.",
   },
+
   {
     title: "Dignity, not pity",
-    body: "Every person we serve bears the image of God. We refuse poverty-porn. We tell the truth about need, and we tell it with honour.",
+
+    body:
+      "Every person we serve bears the image of God. We seek to communicate need honestly and respectfully, protecting the dignity and privacy of the people entrusted to our care.",
   },
+
   {
     title: "Holistic care",
-    body: "A scholarship without discipleship, or a sermon without bread, is half a gospel. We hold faith, education, health, and livelihoods together.",
+
+    body:
+      "We recognise that people have interconnected spiritual, educational, physical, emotional, social, and economic needs. Our programmes seek to respond to the whole person and family.",
   },
+
   {
     title: "Partnership",
-    body: "We are still building capacity. Churches, local leaders, diaspora friends, and institutions who will walk with us for the long season are our strategy — not a footnote.",
+
+    body:
+      "We believe lasting change grows through relationships. Churches, local leaders, families, professionals, organizations, and friends at home and abroad can each contribute to the work.",
+  },
+
+  {
+    title: "Stewardship",
+
+    body:
+      "We seek to use every resource responsibly and purposefully, building programmes that serve people well while strengthening the Foundation's long-term capacity.",
+  },
+
+  {
+    title: "Compassion in action",
+
+    body:
+      "Compassion is more than words. We seek practical ways to stand with children, families, and communities when they face difficult circumstances.",
   },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* Get Involved                                                                */
+/* -------------------------------------------------------------------------- */
 
 export const INVOLVE_PATHS = [
   {
     title: "Volunteer",
-    body: "Give a season of presence in Lugulu — teaching, mentoring, health outreach, agribusiness, counselling, or administration.",
+
+    body:
+      "Give your time and skills to support education, mentoring, health outreach, agribusiness, counselling, administration, or community development.",
+
     to: "/contact" as const,
+
     cta: "Offer your time",
   },
+
   {
     title: "Sponsor a learner",
-    body: "Walk with one child or youth through school fees, books, and a mentor. You will know the name you are holding.",
+
+    body:
+      "Walk with a vulnerable learner through school fees, books, uniforms, examination needs, mentorship, and encouragement.",
+
     to: "/donate" as const,
-    cta: "Start a sponsorship",
+
+    cta: "Sponsor a learner",
   },
+
   {
     title: "Partner as a church or organisation",
-    body: "Mission teams, pulpit exchanges, joint outreaches, and multi-year programme support. We prefer relationships to one-off visits.",
+
+    body:
+      "Partner with us through mission teams, joint outreaches, mentorship, discipleship, programme support, or longer-term collaboration.",
+
     to: "/contact" as const,
+
     cta: "Start a conversation",
   },
+
   {
     title: "Give skills or funding",
-    body: "Governance, accounting, agronomy, medicine, curriculum, and the funds that keep field work moving. Capacity is the gift we need most.",
+
+    body:
+      "Support the work through professional expertise, training, equipment, programme funding, or a financial gift that helps keep community work moving.",
+
     to: "/donate" as const,
+
     cta: "Give or offer skills",
   },
 ];
 
+/* -------------------------------------------------------------------------- */
+/* Stories / Impact                                                            */
+/* -------------------------------------------------------------------------- */
+
 export const STORIES = [
   {
     title: "Classrooms that stay open",
-    image: "/images/education.jpg",
-    imageAlt: "Students and a mentor in a rural classroom",
-    body: "When a learner is sent home for fees, a destiny pauses. Our education work is deliberately small and personal: we would rather walk faithfully with a few than announce numbers we cannot shepherd.",
+
+    image: "/images/education/classroom-02.jpg",
+
+    imageAlt:
+      "Students and a mentor participating in a classroom learning session",
+
+    body:
+      "When financial hardship keeps a learner away from school, an important part of their journey is interrupted. Through education support and mentorship, we seek to help vulnerable learners remain in school and continue pursuing their dreams.",
   },
+
   {
     title: "Circles under the trees",
-    image: "/images/mentorship.jpg",
-    imageAlt: "Youth seated in a mentorship circle outdoors",
-    body: "Mentorship in Lugulu does not require a conference hall. It requires adults who will sit, listen, and open Scripture. These circles are where character is formed before careers are chosen.",
+
+    image: "/images/mentorship/circle-02.jpg",
+
+    imageAlt:
+      "Young people seated together during an outdoor mentorship session",
+
+    body:
+      "Mentorship does not always require a conference hall. Sometimes it begins with trusted adults sitting with young people, listening to their questions, opening Scripture, and helping them think about character, purpose, education, and the future.",
   },
+
   {
     title: "Jackets on the path",
-    image: "/images/volunteers.jpg",
-    imageAlt: "Volunteers in reflective jackets speaking with residents",
-    body: "You will know our volunteers by the reflective jackets and by the time they take. Outreach is not a photograph. It is a conversation at a homestead, a referral, a prayer, a return visit.",
+
+    image: "/images/team/colleagues-01.jpg",
+
+    imageAlt:
+      "Volunteers in reflective jackets engaging with community members",
+
+    body:
+      "Community outreach is more than a photograph. It is a conversation at a homestead, a referral, a prayer, a practical response, and sometimes a return visit to see how a family is doing.",
   },
+
   {
     title: "Fields that feed more than hunger",
-    image: "/images/farming.jpg",
-    imageAlt: "Farmers working a maize plot in Bungoma County",
-    body: "Livelihoods training treats farming as calling and craft. A well-kept plot is a sermon about stewardship — and a way a household stops waiting for the next handout.",
+
+    image: "/images/farming/tree-planting-01.jpg",
+
+    imageAlt:
+      "Community members participating in agricultural and environmental activities",
+
+    body:
+      "Livelihoods work connects practical skills with stewardship. Through agriculture, enterprise development, savings, and responsible use of resources, we seek to help families build greater resilience and opportunity.",
   },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* Education & Scholarship Campaign                                            */
+/* -------------------------------------------------------------------------- */
+
+export const EDUCATION_SUPPORT = {
+  title: "Walk With a Child. Nurture a Destiny.",
+
+  subtitle:
+    "Your support can help a vulnerable learner remain in school, overcome barriers, and prepare for a brighter future.",
+
+  introduction:
+    "Every child carries God-given potential, a dream, and a future worth protecting. Yet for some children, education is interrupted by circumstances they cannot control.",
+
+  supportAreas: [
+    "School fees",
+    "School uniforms",
+    "Books and learning materials",
+    "Examination-related needs",
+    "Educational supplies",
+    "Mentorship and encouragement",
+    "Career guidance",
+  ],
+
+  partnershipMessage:
+    "You can support one learner or several learners for a term, a year, or, where possible, throughout their educational journey.",
+
+  childMessage:
+    "Your future matters. You are not walking this journey alone.",
+
+  scripture: {
+    text:
+      "Whoever is kind to the poor lends to the LORD, and he will reward them for what they have done.",
+    ref: "Proverbs 19:17",
+  },
+
+  callsToAction: [
+    {
+      label: "Sponsor a Learner",
+      to: "/donate" as const,
+    },
+
+    {
+      label: "Become a Mentor",
+      to: "/contact" as const,
+    },
+
+    {
+      label: "Partner With Us",
+      to: "/contact" as const,
+    },
+  ],
+} as const;
+
+/* -------------------------------------------------------------------------- */
+/* Giving                                                                      */
+/* -------------------------------------------------------------------------- */
+
+export const GIVING = {
+  title: "Give Toward a Child's Future",
+
+  intro:
+    "Your generosity can help provide practical support to vulnerable children, families, and communities through the work of Brook of Destiny Foundation.",
+
+  methods: [
+    {
+      title: "M-Pesa PayBill",
+
+      provider: "M-Pesa",
+
+      paybill: SITE.giving.paybill,
+
+      account: SITE.giving.mpesaAccount,
+
+      accountName: SITE.giving.accountName,
+
+      instruction:
+        "Use the PayBill number above and enter the Foundation's M-Pesa account number when prompted.",
+    },
+
+    {
+      title: "Bank Transfer",
+
+      provider: SITE.giving.bank,
+
+      account: SITE.giving.bankAccount,
+
+      accountName: SITE.giving.accountName,
+
+      instruction:
+        "Use the account details above when making a bank transfer to support the Foundation's programmes.",
+    },
+  ],
+
+  educationNote:
+    "If you would specifically like your gift to support education and scholarship assistance, please indicate 'Education & Scholarship Support' when contacting us or submitting your giving information.",
+
+  transparency:
+    "We are committed to responsible stewardship and to using resources purposefully to serve children, families, and communities.",
+} as const;
+
+/* -------------------------------------------------------------------------- */
+/* Contact                                                                      */
+/* -------------------------------------------------------------------------- */
+
+export const CONTACT = {
+  email: SITE.email,
+
+  location: SITE.location.line,
+
+  responseMessage:
+    "Email or use the contact form and our team will respond personally.",
+
+  partnershipMessage:
+    "Whether you want to sponsor a learner, volunteer your skills, partner as a church or organisation, or support a community project, we would be glad to hear from you.",
+} as const;
+
+/* -------------------------------------------------------------------------- */
+/* Footer                                                                      */
+/* -------------------------------------------------------------------------- */
+
+export const FOOTER = {
+  mission:
+    "Brook of Destiny Foundation exists to nurture God-given potential, strengthen vulnerable families, and contribute to transformed communities through practical Christian service.",
+
+  verse: SITE.verse,
+
+  copyright:
+    `© ${new Date().getFullYear()} Brook of Destiny Foundation. All rights reserved.`,
+} as const;
