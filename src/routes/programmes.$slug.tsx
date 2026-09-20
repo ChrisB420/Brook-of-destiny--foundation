@@ -33,6 +33,7 @@ function ProgrammePage() {
         lede={programme.summary}
         image={programme.image}
         imageAlt={programme.imageAlt}
+        video={programme.video}
       />
 
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_18rem]">
@@ -47,15 +48,15 @@ function ProgrammePage() {
             ))}
           </div>
 
-          {/* Faith programme photo gallery */}
+          {/* Programme photo gallery */}
           {programme.images && programme.images.length > 0 && (
             <div className="mt-10">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
-                Faith in action
+                In pictures
               </p>
 
               <h2 className="mt-3 font-display text-2xl font-semibold text-forest sm:text-3xl">
-                Bibles, faith and discipleship
+                {programme.title} in action
               </h2>
 
               <BrookRule className="mt-4" />
@@ -66,7 +67,11 @@ function ProgrammePage() {
                     key={image.src}
                     src={image.src}
                     alt={image.alt}
-                    className="aspect-photo w-full rounded-2xl object-cover shadow-soft"
+                    className={`w-full rounded-2xl object-cover shadow-soft ${
+                      image.featured
+                        ? "aspect-[16/9] sm:col-span-2"
+                        : "aspect-photo"
+                    } ${image.className ?? ""}`}
                   />
                 ))}
               </div>
