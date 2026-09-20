@@ -27,42 +27,70 @@ function Home() {
     <>
       {/* HERO */}
       <section className="relative isolate min-h-[88dvh] overflow-hidden bg-forest-deep text-cream">
+        {/* Hero background */}
         <img
           src="/images/hero.jpg"
           alt="Highland paths and maize fields in Bungoma County, western Kenya"
           className="absolute inset-0 size-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-forest-deep/62" />
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-forest-deep/65" />
 
-        {/* Logo hidden to keep the hero clean */}
-        <img
-          src="/images/logo.jpeg"
-          alt="Brook of Destiny Foundation"
-          className="hidden"
-        />
-
-        <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-28 sm:px-6 sm:pb-20">
-          <div className="flex items-center gap-3">
-            {/* Secondary logo hidden */}
+        {/* LARGE LOGO
+            Positioned on the left side of the hero.
+            It does NOT sit over the introduction text.
+        */}
+        <div className="absolute left-5 top-24 z-10 hidden sm:block lg:left-10 lg:top-28">
+          <div className="flex h-52 w-52 items-center justify-center rounded-2xl bg-white/10 p-4 backdrop-blur-[2px] sm:h-60 sm:w-60 lg:h-64 lg:w-64">
             <img
               src="/images/logo.jpeg"
-              alt=""
-              className="hidden"
+              alt="Brook of Destiny Foundation"
+              className="max-h-full max-w-full object-contain drop-shadow-2xl"
             />
+          </div>
+        </div>
 
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-soft">
+        {/* Mobile logo */}
+        <div className="absolute left-1/2 top-20 z-10 flex -translate-x-1/2 items-center justify-center sm:hidden">
+          <div className="flex h-32 w-32 items-center justify-center rounded-2xl bg-white/10 p-3">
+            <img
+              src="/images/logo.jpeg"
+              alt="Brook of Destiny Foundation"
+              className="max-h-full max-w-full object-contain"
+            />
+          </div>
+        </div>
+
+        {/* HERO CONTENT
+            Extra left padding on desktop creates a dedicated
+            text area beside the large logo.
+        */}
+        <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-52 sm:px-6 sm:pb-20 sm:pt-72 lg:pl-[23rem] lg:pt-28">
+          {/* Small logo + location */}
+          <div className="flex items-center gap-4">
+            <div className="flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-lg ring-2 ring-gold/70 sm:size-20">
+              <img
+                src="/images/logo.jpeg"
+                alt="Brook of Destiny Foundation"
+                className="size-full object-contain"
+              />
+            </div>
+
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-soft sm:text-sm">
               Bungoma County · Kenya
             </p>
           </div>
 
-          <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold text-cream sm:text-6xl">
+          {/* Intro heading */}
+          <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-cream sm:text-6xl">
             {SITE.tagline.replace(".", "")}
           </h1>
 
           <BrookRule className="mt-5 h-4 w-48" />
 
-          <p className="mt-5 max-w-xl text-base text-cream/90 sm:text-lg">
+          {/* Intro paragraph */}
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-cream/90 sm:text-lg">
             Brook of Destiny Foundation is a Christian non-profit organization
             dedicated to holistic community transformation. By integrating the
             Gospel with practical care, the organization delivers sustainable
@@ -71,6 +99,7 @@ function Home() {
             a supportive network around every vulnerable child and family.
           </p>
 
+          {/* Buttons */}
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg">
               <Link to="/donate">Donate</Link>
