@@ -319,32 +319,36 @@ export const PROGRAMMES: Programme[] = [
     icon: "stethoscope",
   },
 
-  {
+ {
     slug: "livelihoods",
 
-    title: "Livelihoods & Agribusiness",
+    title: "Livelihoods, Agribusiness & Economic Empowerment",
 
-    short: "Work that feeds a family",
+    short: "Equip people. Create opportunities.",
 
     summary:
-      "Training and practical support for small farms and household enterprises, helping families build sustainable livelihoods and greater resilience.",
+      "Equipping individuals, families, and community groups with practical skills, agribusiness knowledge, entrepreneurship opportunities, and resources that support sustainable livelihoods and greater self-reliance.",
 
     body: [
-      "Many families in Bungoma County depend on agriculture and small household enterprises for their livelihoods. A practical skill, improved farming method, access to inputs, savings, or a better market can make a meaningful difference to a household.",
+      "At Brook of Destiny Foundation, we believe lasting transformation includes equipping people with the skills, opportunities, and resources to build sustainable livelihoods and greater self-reliance.",
 
-      "Our livelihoods programme promotes practical agribusiness knowledge, including soil management, record keeping, savings, stewardship, kitchen gardening, poultry, and small-scale enterprise development.",
+      "Our programme supports individuals, families, and community groups through practical agribusiness and entrepreneurship initiatives, including climate-smart farming, kitchen gardening, poultry, livestock, value addition, financial literacy, savings, record keeping, vocational and digital skills, and small-enterprise development.",
 
-      "We seek to help individuals and groups move toward greater self-reliance and responsible stewardship of the resources entrusted to them.",
+      "We seek to move beyond short-term assistance by building capacity, connecting people to markets and technical expertise, and, where resources allow, providing starter support and linking promising initiatives with appropriate financial and development partners.",
 
-      "Where resources allow, promising groups may receive starter support, demonstration opportunities, or connections to relevant technical and financial partners.",
+      "Our broader mission is to empower young people, women, families, and communities to develop their God-given potential, create dignified economic opportunities, and responsibly steward the resources entrusted to them.",
 
-      "Agronomists, business professionals, SACCO partners, trainers, and supporters who can help fund practical livelihood initiatives are welcome to partner with us.",
+      "We welcome farmers, agronomists, business professionals, financial institutions, trainers, investors, churches, development organizations, and other partners to join us in creating sustainable pathways from vulnerability to resilience.",
+
+      "The plans of the diligent lead surely to abundance. — Proverbs 21:5.",
+
+      "Equip People. Create Opportunities. Build Sustainable Livelihoods. Transform Communities.",
     ],
 
     image: "/images/farming/tree-planting-02.jpg",
 
     imageAlt:
-      "Farmers working on agricultural activities in Bungoma County",
+      "Community members participating in agricultural and livelihood activities in Bungoma County",
 
     images: [
       {
