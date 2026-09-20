@@ -139,47 +139,41 @@ export const PROGRAMMES: Programme[] = [
     "Young learners studying with a mentor in a classroom in western Kenya",
 
   images: [
-      {
+    {
       src: "/images/education/education-01.jpeg",
       alt: "Young learners studying together in a classroom",
     },
+
     // Scholarship photos
     {
-  src: "/images/education/scholarship-01.jpeg",
-  alt:
-    "A learner receiving educational scholarship support from Brook of Destiny Foundation",
-  className: "object-cover object-top",
-},
+      src: "/images/education/scholarship-01.jpeg",
+      alt: "A learner receiving educational scholarship support from Brook of Destiny Foundation",
+      featured: true,
+      className: "object-top",
+    },
 
-  
     // Sponsorship photos
-    
     {
       src: "/images/education/sponsorship-01.jpeg",
-      alt:
-        "A child receiving support through the Brook of Destiny Foundation sponsorship programme",
+      alt: "A child receiving support through the Brook of Destiny Foundation sponsorship programme",
     },
     {
       src: "/images/education/sponsorship-02.jpeg",
-      alt:
-        "Educational sponsorship helping a vulnerable learner continue their studies",
+      alt: "Educational sponsorship helping a vulnerable learner continue their studies",
     },
-   
+
     // Donation photos
     {
       src: "/images/education/donation-01.jpeg",
-      alt:
-        "Educational supplies being provided to support vulnerable learners",
+      alt: "Educational supplies being provided to support vulnerable learners",
     },
     {
       src: "/images/education/donation-02.jpeg",
-      alt:
-        "Donated learning materials being provided to children through the education programme",
+      alt: "Donated learning materials being provided to children through the education programme",
     },
     {
       src: "/images/education/donation-03.jpeg",
-      alt:
-        "Community members receiving donated educational support from Brook of Destiny Foundation",
+      alt: "Community members receiving donated educational support from Brook of Destiny Foundation",
     },
   ],
 
