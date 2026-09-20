@@ -81,6 +81,8 @@ export type ProgrammeIcon =
 export type ProgrammeImage = {
   src: string;
   alt: string;
+  featured?: boolean;
+  className?: string;
 };
 
 export type Programme = {
