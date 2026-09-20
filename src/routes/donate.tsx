@@ -152,6 +152,148 @@ function Donate() {
             </Button>
           </div>
         </div>
+
+        {/* INTERNATIONAL GIVING */}
+        <div className="mt-8 rounded-2xl border border-line bg-card p-6 shadow-soft sm:p-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+                International Giving
+              </p>
+
+              <h3 className="mt-3 font-display text-2xl font-semibold text-forest sm:text-3xl">
+                Give From Anywhere in the World
+              </h3>
+
+              <BrookRule className="mx-auto mt-4" />
+
+              <p className="mt-5 text-muted">
+                Friends, churches, organisations, and partners outside Kenya
+                can support Brook of Destiny Foundation through international
+                money-transfer services or an international bank transfer to
+                our KCB account.
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {/* MONEY TRANSFER */}
+              <div className="rounded-xl border border-line bg-cream p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+                  International Money Transfer
+                </p>
+
+                <h4 className="mt-3 font-display text-xl font-semibold text-forest">
+                  Send Support Through a Money Transfer Service
+                </h4>
+
+                <p className="mt-3 text-sm leading-6 text-muted">
+                  International donors may use an available money-transfer
+                  service such as Western Union, MoneyGram, or Ria to send
+                  funds to Kenya. KCB provides international money-transfer
+                  services and allows international remittances to be
+                  received through its network.
+                </p>
+
+                <div className="mt-5 rounded-lg border border-gold/30 bg-card p-4">
+                  <p className="text-sm font-semibold text-forest">
+                    Before sending
+                  </p>
+
+                  <p className="mt-2 text-sm leading-6 text-muted">
+                    Please contact Brook of Destiny Foundation first so we can
+                    provide the correct recipient information and instructions
+                    for the transfer method you choose.
+                  </p>
+                </div>
+
+                <Button asChild variant="gold" className="mt-5">
+                  <a
+                    href={`mailto:${SITE.email}?subject=International%20Money%20Transfer%20Donation`}
+                  >
+                    Get International Transfer Details
+                  </a>
+                </Button>
+              </div>
+
+              {/* SWIFT */}
+              <div className="rounded-xl bg-forest p-6 text-cream">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
+                  International Bank Transfer
+                </p>
+
+                <h4 className="mt-3 font-display text-xl font-semibold text-cream">
+                  Transfer Directly to KCB
+                </h4>
+
+                <p className="mt-3 text-sm leading-6 text-cream/80">
+                  Donors with access to international bank transfers can ask
+                  their bank to send funds to the Brook of Destiny Foundation
+                  KCB account using the required SWIFT transfer information.
+                </p>
+
+                <div className="mt-6 space-y-4">
+                  <div>
+                    <p className="text-sm text-gold-soft">
+                      Bank
+                    </p>
+                    <p className="mt-1 font-semibold text-cream">
+                      {SITE.giving.bank}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-sm text-gold-soft">
+                      Account Name
+                    </p>
+                    <p className="mt-1 font-semibold text-cream">
+                      {SITE.giving.accountName}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-sm text-gold-soft">
+                      Account Number
+                    </p>
+                    <p className="mt-1 break-all font-display text-xl font-semibold text-cream">
+                      {SITE.giving.bankAccount}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-sm text-gold-soft">
+                      KCB SWIFT / BIC
+                    </p>
+                    <p className="mt-1 font-display text-xl font-semibold tracking-wide text-cream">
+                      KCBLKENX
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-6 rounded-xl border border-gold/30 bg-black/10 p-4">
+                  <p className="text-xs leading-5 text-cream/70">
+                    International transfers may require additional bank and
+                    beneficiary information. Please contact us before sending
+                    funds so we can confirm the correct transfer details.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 text-center">
+              <p className="text-sm text-muted">
+                Need the correct international transfer instructions?
+              </p>
+
+              <Button asChild className="mt-4">
+                <a
+                  href={`mailto:${SITE.email}?subject=International%20Donation%20Inquiry`}
+                >
+                  Contact Brook of Destiny Foundation
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* WAYS TO PARTNER */}
@@ -173,7 +315,7 @@ function Donate() {
             {[
               {
                 title: "Financial Contributions",
-                body: "Give through M-PESA or direct bank deposit to strengthen our programmes and community work.",
+                body: "Give through M-PESA, bank deposit, or international money transfer to strengthen our programmes and community work.",
               },
               {
                 title: "Education & Materials",
@@ -225,7 +367,9 @@ function Donate() {
             repay him for his deed.”
           </p>
 
-          <p className="mt-2 text-sm text-cream/60">— Proverbs 19:17</p>
+          <p className="mt-2 text-sm text-cream/60">
+            — Proverbs 19:17
+          </p>
         </div>
       </section>
     </>
