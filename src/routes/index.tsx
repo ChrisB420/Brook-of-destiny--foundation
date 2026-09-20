@@ -25,7 +25,9 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
+      {/* ========================================================= */}
       {/* HERO */}
+      {/* ========================================================= */}
       <section className="relative isolate min-h-[88dvh] overflow-hidden bg-forest-deep text-cream">
         {/* Hero background */}
         <img
@@ -35,62 +37,81 @@ function Home() {
         />
 
         {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-forest-deep/65" />
+        <div className="absolute inset-0 bg-forest-deep/62" />
 
-        {/* LARGE LOGO
-            Positioned on the left side of the hero.
-            It does NOT sit over the introduction text.
-        */}
-        <div className="absolute left-5 top-24 z-10 hidden sm:block lg:left-10 lg:top-28">
-          <div className="flex h-52 w-52 items-center justify-center rounded-2xl bg-white/10 p-4 backdrop-blur-[2px] sm:h-60 sm:w-60 lg:h-64 lg:w-64">
-            <img
-              src="/images/logo.jpeg"
-              alt="Brook of Destiny Foundation"
-              className="max-h-full max-w-full object-contain drop-shadow-2xl"
-            />
-          </div>
+        {/* ===================================================== */}
+        {/* LARGE LOGO WATERMARK                                  */}
+        {/* This stays BEHIND the text and does not block it.     */}
+        {/* ===================================================== */}
+        <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+          <img
+            src="/images/logo.jpeg"
+            alt=""
+            aria-hidden="true"
+            className="
+              absolute
+              left-1/2
+              top-[22%]
+              w-64
+              -translate-x-1/2
+              opacity-[0.09]
+              object-contain
+              sm:left-auto
+              sm:right-[-30px]
+              sm:top-[24%]
+              sm:w-[360px]
+              sm:translate-x-0
+              md:right-[-20px]
+              md:top-[20%]
+              md:w-[420px]
+              lg:right-[-30px]
+              lg:top-[16%]
+              lg:w-[470px]
+              xl:right-[-20px]
+              xl:w-[520px]
+            "
+          />
         </div>
 
-        {/* Mobile logo */}
-        <div className="absolute left-1/2 top-20 z-10 flex -translate-x-1/2 items-center justify-center sm:hidden">
-          <div className="flex h-32 w-32 items-center justify-center rounded-2xl bg-white/10 p-3">
-            <img
-              src="/images/logo.jpeg"
-              alt="Brook of Destiny Foundation"
-              className="max-h-full max-w-full object-contain"
-            />
-          </div>
-        </div>
-
-        {/* HERO CONTENT
-            Extra left padding on desktop creates a dedicated
-            text area beside the large logo.
-        */}
-        <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-14 pt-52 sm:px-6 sm:pb-20 sm:pt-72 lg:pl-[23rem] lg:pt-28">
-          {/* Small logo + location */}
-          <div className="flex items-center gap-4">
-            <div className="flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-lg ring-2 ring-gold/70 sm:size-20">
-              <img
-                src="/images/logo.jpeg"
-                alt="Brook of Destiny Foundation"
-                className="size-full object-contain"
-              />
-            </div>
-
+        {/* ===================================================== */}
+        {/* HERO CONTENT                                          */}
+        {/* ===================================================== */}
+        <div
+          className="
+            relative
+            z-10
+            mx-auto
+            flex
+            min-h-[88dvh]
+            max-w-6xl
+            flex-col
+            justify-end
+            px-4
+            pb-14
+            pt-32
+            sm:px-6
+            sm:pb-20
+            sm:pt-40
+            lg:pl-80
+            lg:pt-28
+          "
+        >
+          {/* Location label */}
+          <div className="flex items-center">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-soft sm:text-sm">
               Bungoma County · Kenya
             </p>
           </div>
 
-          {/* Intro heading */}
+          {/* Main headline */}
           <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-cream sm:text-6xl">
             {SITE.tagline.replace(".", "")}
           </h1>
 
           <BrookRule className="mt-5 h-4 w-48" />
 
-          {/* Intro paragraph */}
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-cream/90 sm:text-lg">
+          {/* Introduction */}
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-cream/90 sm:text-lg">
             Brook of Destiny Foundation is a Christian non-profit organization
             dedicated to holistic community transformation. By integrating the
             Gospel with practical care, the organization delivers sustainable
@@ -112,7 +133,9 @@ function Home() {
         </div>
       </section>
 
+      {/* ========================================================= */}
       {/* FOUNDATION / VISION */}
+      {/* ========================================================= */}
       <section className="border-b border-line bg-cream">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 sm:py-14 md:grid-cols-2 lg:grid-cols-4">
           {/* ROOTED IN BUNGOMA */}
@@ -190,7 +213,9 @@ function Home() {
         </div>
       </section>
 
+      {/* ========================================================= */}
       {/* OUR PROGRAMMES */}
+      {/* ========================================================= */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
           Our programmes
@@ -231,6 +256,7 @@ function Home() {
 
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-gold-deep">
                   Read more
+
                   <ArrowRight className="size-4 transition-transform duration-150 group-hover:translate-x-0.5" />
                 </span>
               </div>
@@ -239,7 +265,9 @@ function Home() {
         </div>
       </section>
 
+      {/* ========================================================= */}
       {/* FROM THE FIELD */}
+      {/* ========================================================= */}
       <section className="bg-forest text-cream">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2">
           <img
@@ -279,7 +307,9 @@ function Home() {
         </div>
       </section>
 
+      {/* ========================================================= */}
       {/* VIDEO PROGRAMMES */}
+      {/* ========================================================= */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
           From our programmes
@@ -384,7 +414,9 @@ function Home() {
         </div>
       </section>
 
+      {/* ========================================================= */}
       {/* YOUTUBE */}
+      {/* ========================================================= */}
       <section className="bg-cream">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-20">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
@@ -418,7 +450,9 @@ function Home() {
         </div>
       </section>
 
+      {/* ========================================================= */}
       {/* CHRISTIAN IDENTITY */}
+      {/* ========================================================= */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
@@ -465,7 +499,9 @@ function Home() {
         </div>
       </section>
 
+      {/* ========================================================= */}
       {/* SUPPORT OUR WORK */}
+      {/* ========================================================= */}
       <section className="relative isolate overflow-hidden bg-forest-deep py-16 text-cream sm:py-20">
         <img
           src="/images/events/poster-2026.jpg"
