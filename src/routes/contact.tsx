@@ -18,7 +18,7 @@ function Contact() {
       <PageHero
         kicker="Contact"
         title="Write, visit, or walk with us"
-        lede="Our office is in Lugulu, Bungoma County. We welcome conversations about partnership, volunteering, giving, and community support."
+        lede="Our office is in Bungoma . We welcome conversations about partnership, volunteering, giving, and community support."
         image="/images/hero.jpg"
         imageAlt="Village paths in Bungoma County"
       />
