@@ -11,9 +11,10 @@ export function SiteFooter() {
           <BrandLockup inverted />
 
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/75">
-            Rooted in Bungoma, Kenya. Serving with purpose and partnering
-            beyond borders to nurture destinies and transform communities.
-          </p>
+  Based in Bungoma, Kenya, with a vision that reaches beyond
+  borders — serving with purpose to nurture destinies and transform
+  communities.
+</p>
 
           <BrookRule className="mt-5 text-gold/80" />
         </div>
