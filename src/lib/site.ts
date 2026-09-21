@@ -27,8 +27,8 @@ export const SITE = {
   },
 
   social: {
-    tiktok: "https://www.tiktok.com/@brookofdestinyfoundation",
-    facebook: "https://www.facebook.com/brookofdestinyfoundation",
+  facebook: "https://www.facebook.com/share/1Eafzazcv3/",
+  tiktok: "https://vm.tiktok.com/ZS9ASgbdHPBRs-oc8kB/",
     instagram: "https://www.instagram.com/brookofdestinyfoundation",
     youtube:
       "https://youtube.com/@brookofdestinyfoundation?si=1ljmyn8UQP974fPM",
