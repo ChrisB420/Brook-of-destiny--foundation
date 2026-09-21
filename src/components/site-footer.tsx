@@ -74,7 +74,7 @@ export function SiteFooter() {
             <br />
             Account{" "}
             <span className="text-gold-soft">
-              {SITE.giving.account}
+              {SITE.giving.mpesaAccount}
             </span>
           </p>
 
